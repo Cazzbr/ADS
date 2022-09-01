@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.34.3 (Applications 22.04.3) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKZrO4zoecB5S" name="char"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uJWc4ycFIMqpr" name="int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uNXuL8sqogdcV" name="float"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uTFiNIIZqd76e" name="double"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uR8UaYH14xPek" name="bool"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="upkkYWDYmeY7l" name="string"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSXLMXoVLtyN5" name="unsigned char"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ufaQi8R8KGfs4" name="signed char"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZnFZDGeBYRU0" name="unsigned int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZMxP2SGTMe2r" name="signed int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uejK1KifxyvWF" name="short int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uO8b1uRuSHs8j" name="unsigned short int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uagqs19ye2YB6" name="signed short int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uklnGWZuqw85T" name="long int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uipMkmCjFkYOD" name="signed long int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uTXnozFSTrJjo" name="unsigned long int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="umc0Q7O7kuLp6" name="long double"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uBCtmWe3BIr9v" name="wchar_t"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uFlcbYpZc77oT" name="SuperMercado">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uiP7ZUrXewPlF" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uSfyf7HO7uDkn" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uRc9VEsvMothA" name="Endereço" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="urmG43X2AXEim" name="id_responsável" visibility="private" type="uQiRVJzZ6Sr0n"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uFkUweTI1KLAt" name="Funcionario">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uSW2DDolWCrYR" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="umHSBPSp36oTl" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uaR5BdOuCgMPa" name="salario" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uNCZcNKHPX1KU" name="data_admissÃ£o" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uRJ8QErYmFMEB" name="tipo_contrato" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uksxqG09fYVlY" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uA9JaqxdtcJdL" name="Produto">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFdbK4e4qV9hA" name="Id" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uP7ASGVRedi7M" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ua6Qc2cdqEsxM" name="preço_Veda" visibility="private" type="uNXuL8sqogdcV"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4vYAVWQAUm2j" name="margem" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uRcRbCv4hDVar" name="id_fornecedor" visibility="private" type="uERhzoZIyo063"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uunJSKBlaTmsH" name="id_promocao" visibility="private" type="ua1XOjvvzW7fj"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uERhzoZIyo063" name="Fornecedor">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ubsxS5IizXx1J" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uferzIzLnh8Z7" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLjSTg5vvWGfL" name="Conta_bancária" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uRCJR7XwRX5AY" name="Endereço" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="usvhZAnkgnJ4t" name="Razão Social" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ut1KNJ3ORlNcf" name="Id_compra" visibility="private" type="u11vX6598G6Wq"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="umuBOUUb82r38" name="Venda">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u1N5V2NmkjJjz" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uGsA9AWNdM2PW" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFWHye2g4zpgH" name="Id_produto" visibility="private" type="uA9JaqxdtcJdL"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u063BIQ3iWb15" name="Id_cliente" visibility="private" type="ub6dsGZ46yVWG"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u11vX6598G6Wq" name="Compra">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uUUwyiAU5jGsM" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uKQ4ZtVqi7UdA" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uVvRoGgpg0sBp" name="valor_conta" visibility="private" type="uNXuL8sqogdcV"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uQiRVJzZ6Sr0n" name="Faturamento">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uph8z1lUDAzCT" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u7snnTCeM6e46" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uccVm4iVnuow7" name="Data_faturamento" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uujGe8V51jn6X" name="Valor_faturamento" visibility="private" type="uNXuL8sqogdcV"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uMybLSSG1usI0" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uwtRv4GmIyWqa" name="Contas">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u8WuPfWt45xxW" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ulcFUth24MdZt" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uoWXCmZvP4GVO" name="Valor" visibility="private" type="uNXuL8sqogdcV"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uSKhx0DhhTuuo" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ubPpBg6z9fyad" name="id_fornecedor" visibility="private" type="uERhzoZIyo063"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u42c69Mtu9BOZ" name="id_prestadorserviço" visibility="private" type="u7rLgvj1STqKc"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ufTsvOovfPS61" name="Imobilizados">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uVQ9eBUxOR6b4" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uOcDavafKYPDj" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uwxNhismSzKxT" name="Valor" visibility="private" type="uNXuL8sqogdcV"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uiJsq7AMP7gxG" name="data_aquisição" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uY3uJ7ZDbSDYt" name="tempo_depreciação_anos" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u3Xhtu3SdAahN" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uOOURqRToKwcM" name="Categorias"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u7rLgvj1STqKc" name="Prestador de Serviços">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u0fm96gjdAyoz" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u6QbLXbwM6Bzw" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uYaHpH6coYqGG" name="tipo_serviço" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="usFhdYHqZq9C0" name="data_contrato" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uivNB3FhuBXot" name="data_renovação_contrato" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uZiamgYfnEREq" name="data_pagamento" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uDgi8kMoGYkVe" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uGvAP1rhSZhmS" name="Resfriados">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u6mdf1rxrT3Qw" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uhfgpjsPNgHNr" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4XP0kXCvmwNk" name="Temp_armazemanto" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uyAKdpzT1037I" name="Data_validade" visibility="private" type="u54PcgBbilPD2"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uD7lXHrBabBHG" name="id_produto" visibility="private" type="uA9JaqxdtcJdL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u1sNAaRs8uFH8" name="Congelados">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uyLg2Hjq0VN7K" name="Id" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uuGgK3GtGRqQZ" name="Derscrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uv95BF1qjxERJ" name="temp_armazenamento" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uaaOj7RerNJZn" name="Data_validade" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4UocYmDKUXPB" name="id_produto" visibility="private" type="uA9JaqxdtcJdL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uI2FfvXIyEF4t" name="Não Perecí­veis">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uNUwb79AQ5WQw" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uBZNuy23aH6SY" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="upPi3RBqhcyzK" name="empilhamento_max" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ug6Q6H7V6dIou" name="id_produto" visibility="private" type="uA9JaqxdtcJdL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uYvwmQGc5Okzd" name="Frutas e Verduras">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ufONIu7nVjYKs" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ubTEbiwGr5xk9" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ueRGMaLk2lRXN" name="perí­odo_verificação" visibility="private" type="uItP24qRw8Keh"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uN0SXYPAWb4cl" name="id_produto" visibility="private" type="uA9JaqxdtcJdL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ua1XOjvvzW7fj" name="Promoção">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u74aAAA05gym1" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ukMxZRazTrSL3" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uT6gPjwGYrJBp" name="Percentagem_desconto" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uPLbGl9Yglcnh" name="data_inicio" visibility="private" type="u63oLoDD2GtRD"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uKfTsDimOV8HI" name="data_fim" visibility="private" type="u63oLoDD2GtRD"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uO7izscAtpaXV" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u54PcgBbilPD2" name="Date"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u63oLoDD2GtRD" name="date"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="uItP24qRw8Keh" name="time"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ub6dsGZ46yVWG" name="Cliente">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ult9g1almN2rV" name="ID" visibility="private" type="uJWc4ycFIMqpr"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="umUlv1IatQu3o" name="Descrição" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="us5GzLMRJeY9U" name="Endereço" visibility="private" type="uvTlML308Wj2K"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uwM0jEODsw5TG" name="Telefone" visibility="private" type="upkkYWDYmeY7l"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u0ZbAvqFfAoMU" name="id_supermercado" visibility="private" type="uFlcbYpZc77oT"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uvTlML308Wj2K" name="strring"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="154">
+          <diagram xmi.id="uY6LfHLIeELs6" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="61.2476" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <classwidget xmi.id="uFkUweTI1KLAt" localid="uob1DcK3RBCey" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="5.06706" y="19.4329" width="217" height="120" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uFlcbYpZc77oT" localid="ud02YgND4JyXO" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="361.442" y="219.771" width="192" height="88" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uQiRVJzZ6Sr0n" localid="uAsiO8WDkbxEg" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="589.27" y="23.5902" width="217" height="104" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="u1sNAaRs8uFH8" localid="uobD3MKahCWmj" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="855.004" y="351.233" width="177" height="104" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uwtRv4GmIyWqa" localid="uu38HkNCrs8KF" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="-26.736" y="459.582" width="274" height="120" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uERhzoZIyo063" localid="u3JjGPIWNosAo" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="301.497" y="464.087" width="155" height="120" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uA9JaqxdtcJdL" localid="uozHA6LxnegUo" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="556.584" y="418.216" width="178" height="120" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="u7rLgvj1STqKc" localid="uop5e7NBLmX8J" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="0.306173" y="201.292" width="217" height="136" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uGvAP1rhSZhmS" localid="u2NQc7bE87Qey" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="859.481" y="221.242" width="164" height="104" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="umuBOUUb82r38" localid="u4hBm1TocpQFi" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="321.292" y="345.484" width="142" height="88" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ua1XOjvvzW7fj" localid="uEbYPoiIf328X" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="559.061" y="618.161" width="181" height="104" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="u11vX6598G6Wq" localid="u65LPcJShJbbF" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="313.162" y="668.964" width="124" height="72" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uI2FfvXIyEF4t" localid="uFNlNE9Nhu1Vj" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="870.228" y="488.089" width="162" height="88" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uYvwmQGc5Okzd" localid="ukC2b5ItEfxf7" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="865.201" y="620.712" width="172" height="88" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ufTsvOovfPS61" localid="uGunUDWyqnQNu" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="308.048" y="24.6297" width="217" height="120" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ub6dsGZ46yVWG" localid="uZTyXUFROaFRP" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Fira Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="596.49" y="250.379" width="217" height="104" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="ut1KNJ3ORlNcf" localid="uJibOfFQSG1eD" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uERhzoZIyo063" widgetbid="u11vX6598G6Wq" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uuc2mJBXWWvVy" localid="ufIrQpKYZcAHb" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="394.363" y="617.05" width="75" height="20" isinstance="0" showstereotype="2" text="Id_compra" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="377.725" starty="584.087"/>
+                  <endpoint endx="375.925" endy="668.964"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ug6Q6H7V6dIou" localid="uXwcNFGszXFWB" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uI2FfvXIyEF4t" widgetbid="uA9JaqxdtcJdL" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uWHX2wUDQ8faB" localid="ujFReuXtXY72q" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="752.587" y="477.458" width="79" height="20" isinstance="0" showstereotype="2" text="id_produto" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="870.228" starty="517.812"/>
+                  <endpoint endx="734.584" endy="493.904"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uN0SXYPAWb4cl" localid="uAnFqyLK8YLOI" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uYvwmQGc5Okzd" widgetbid="uA9JaqxdtcJdL" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u1O9DH9ltmnTj" localid="uQzISSMukZX06" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="744.844" y="529.164" width="79" height="20" isinstance="0" showstereotype="2" text="id_produto" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="879.096" starty="620.712"/>
+                  <endpoint endx="734.584" endy="532.527"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uRcRbCv4hDVar" localid="uCzrnRFQ5FqTc" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uA9JaqxdtcJdL" widgetbid="uERhzoZIyo063" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="ux7qix3glic5x" localid="ukhJg0XQ2sPqm" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="454.662" y="452.813" width="96" height="20" isinstance="0" showstereotype="2" text="id_fornecedor" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="556.584" starty="493.53"/>
+                  <endpoint endx="456.497" endy="510.752"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD7lXHrBabBHG" localid="uQtcosNKDRKCa" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uGvAP1rhSZhmS" widgetbid="uA9JaqxdtcJdL" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="urqnicLVqQfkr" localid="uGlbMzRCuT7wu" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="757.766" y="396.127" width="79" height="20" isinstance="0" showstereotype="2" text="id_produto" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="866.415" starty="325.242"/>
+                  <endpoint endx="732.199" endy="418.216"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uunJSKBlaTmsH" localid="uHiJoZU9FQ1u3" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uA9JaqxdtcJdL" widgetbid="ua1XOjvvzW7fj" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u84h66pu9bFoB" localid="uxgIYSRo851RQ" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="556.927" y="564.413" width="91" height="20" isinstance="0" showstereotype="2" text="id_promocao" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="646.827" starty="538.216"/>
+                  <endpoint endx="648.483" endy="618.161"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uFWHye2g4zpgH" localid="uG7hzzhZGfKA7" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="umuBOUUb82r38" widgetbid="uA9JaqxdtcJdL" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="ug0pj2kgoJyNi" localid="uF3gd22LBzPEO" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="477.102" y="398.211" width="79" height="20" isinstance="0" showstereotype="2" text="Id_produto" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="463.292" starty="414.357"/>
+                  <endpoint endx="556.584" endy="447.038"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u0ZbAvqFfAoMU" localid="uKXc9IiDJNCxV" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="ub6dsGZ46yVWG" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uaa4CVCv5wl8n" localid="uM4m0AqxdzkdW" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="553.226" y="263.627" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="596.49" starty="285.457"/>
+                  <endpoint endx="553.442" endy="278.743"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u063BIQ3iWb15" localid="usgeTA2XASemh" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="umuBOUUb82r38" widgetbid="ub6dsGZ46yVWG" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uRX7ZoA0oIsBV" localid="uE09bND3MV7gR" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="503.302" y="347.295" width="71" height="20" isinstance="0" showstereotype="2" text="Id_cliente" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="463.292" starty="369.707"/>
+                  <endpoint endx="596.49" endy="332.603"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uksxqG09fYVlY" localid="uMq5ixN213Q99" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uFkUweTI1KLAt" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uHTDM0uXOlart" localid="uZ6aH98SpJPjN" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="204.923" y="181.424" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="222.067" starty="137.595"/>
+                  <endpoint endx="375.362" endy="219.771"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u3Xhtu3SdAahN" localid="utmD6te4djsoM" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="ufTsvOovfPS61" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uCTVsiHLWPSUf" localid="uduTUyI9iDiF8" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="326.955" y="172.571" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="430.245" starty="144.63"/>
+                  <endpoint endx="447.398" endy="219.771"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uMybLSSG1usI0" localid="ux3ylzptoFLzH" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uQiRVJzZ6Sr0n" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uTZAkQSGQgh7m" localid="u1CygQoav31hJ" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="514.943" y="197.771" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="631.36" starty="127.59"/>
+                  <endpoint endx="513.635" endy="219.771"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uDgi8kMoGYkVe" localid="ud5YjL6DGodnn" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="u7rLgvj1STqKc" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uuBukxBW54IXt" localid="uwBKR6vYsYxja" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="224.362" y="260.691" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="361.442" starty="265.291"/>
+                  <endpoint endx="217.306" endy="267.574"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u42c69Mtu9BOZ" localid="uDawrvPlFUnmV" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uwtRv4GmIyWqa" widgetbid="u7rLgvj1STqKc" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="utTVlfwS02W5F" localid="u5uvckSCZrSHR" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="120.053" y="339.292" width="130" height="20" isinstance="0" showstereotype="2" text="id_prestadorserviço" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="109.915" starty="459.582"/>
+                  <endpoint endx="109.202" endy="337.292"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ubPpBg6z9fyad" localid="us1SS0mr32bPN" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uwtRv4GmIyWqa" widgetbid="uERhzoZIyo063" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uN7TOGm6g61xs" localid="ugNImBmDVs579" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="118.822" y="498.106" width="96" height="20" isinstance="0" showstereotype="2" text="id_fornecedor" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="301.497" starty="522.788"/>
+                  <endpoint endx="247.264" endy="521.878"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uSKhx0DhhTuuo" localid="uxbjQMGkqiLjT" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uwtRv4GmIyWqa" widgetbid="uFlcbYpZc77oT" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uVj5tT34eQdJB" localid="uIkA2PauiPb6T" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="301.606" y="319.154" width="116" height="20" isinstance="0" showstereotype="2" text="id_supermercado" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="191.694" starty="459.582"/>
+                  <endpoint endx="397.727" endy="307.771"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u4UocYmDKUXPB" localid="u7TMj6y3ebnNU" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="u1sNAaRs8uFH8" widgetbid="uA9JaqxdtcJdL" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uClIPLXpOYFZ3" localid="unElhuCbj2Gza" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="762.081" y="446.961" width="79" height="20" isinstance="0" showstereotype="2" text="id_produto" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="855.004" starty="425.508"/>
+                  <endpoint endx="734.584" endy="455.816"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="urmG43X2AXEim" localid="ul2XEZN6hBPm1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="uFlcbYpZc77oT" widgetbid="uQiRVJzZ6Sr0n" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uC4MucvqIYXfb" localid="uYrIPNfDWoWFw" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Fira Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="532.36" y="129.59" width="102" height="20" isinstance="0" showstereotype="2" text="id_responsável" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="513.635" starty="219.771"/>
+                  <endpoint endx="631.36" endy="127.59"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uY6LfHLIeELs6" documentation="" uniqueid="uIiWDA2AiMb9l"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uOOURqRToKwcM" type="813" open="1"/>
+          <listitem id="uY6LfHLIeELs6" type="807" label="class diagram" open="0"/>
+          <listitem id="ub6dsGZ46yVWG" type="813" open="1">
+            <listitem id="umUlv1IatQu3o" type="814" open="0"/>
+            <listitem id="us5GzLMRJeY9U" type="814" open="0"/>
+            <listitem id="ult9g1almN2rV" type="814" open="0"/>
+            <listitem id="u0ZbAvqFfAoMU" type="814" open="0"/>
+            <listitem id="uwM0jEODsw5TG" type="814" open="0"/>
+          </listitem>
+          <listitem id="u11vX6598G6Wq" type="813" open="1">
+            <listitem id="uKQ4ZtVqi7UdA" type="814" open="0"/>
+            <listitem id="uUUwyiAU5jGsM" type="814" open="0"/>
+            <listitem id="uVvRoGgpg0sBp" type="814" open="0"/>
+          </listitem>
+          <listitem id="u1sNAaRs8uFH8" type="813" open="1">
+            <listitem id="uaaOj7RerNJZn" type="814" open="0"/>
+            <listitem id="uuGgK3GtGRqQZ" type="814" open="0"/>
+            <listitem id="uyLg2Hjq0VN7K" type="814" open="0"/>
+            <listitem id="u4UocYmDKUXPB" type="814" open="0"/>
+            <listitem id="uv95BF1qjxERJ" type="814" open="0"/>
+          </listitem>
+          <listitem id="uwtRv4GmIyWqa" type="813" open="1">
+            <listitem id="ulcFUth24MdZt" type="814" open="0"/>
+            <listitem id="u8WuPfWt45xxW" type="814" open="0"/>
+            <listitem id="ubPpBg6z9fyad" type="814" open="0"/>
+            <listitem id="u42c69Mtu9BOZ" type="814" open="0"/>
+            <listitem id="uSKhx0DhhTuuo" type="814" open="0"/>
+            <listitem id="uoWXCmZvP4GVO" type="814" open="0"/>
+          </listitem>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uR8UaYH14xPek" type="829" open="0"/>
+            <listitem id="uKZrO4zoecB5S" type="829" open="0"/>
+            <listitem id="uTFiNIIZqd76e" type="829" open="0"/>
+            <listitem id="uNXuL8sqogdcV" type="829" open="0"/>
+            <listitem id="uJWc4ycFIMqpr" type="829" open="0"/>
+            <listitem id="umc0Q7O7kuLp6" type="829" open="0"/>
+            <listitem id="uklnGWZuqw85T" type="829" open="0"/>
+            <listitem id="uejK1KifxyvWF" type="829" open="0"/>
+            <listitem id="ufaQi8R8KGfs4" type="829" open="0"/>
+            <listitem id="uZMxP2SGTMe2r" type="829" open="0"/>
+            <listitem id="uipMkmCjFkYOD" type="829" open="0"/>
+            <listitem id="uagqs19ye2YB6" type="829" open="0"/>
+            <listitem id="upkkYWDYmeY7l" type="829" open="0"/>
+            <listitem id="uSXLMXoVLtyN5" type="829" open="0"/>
+            <listitem id="uZnFZDGeBYRU0" type="829" open="0"/>
+            <listitem id="uTXnozFSTrJjo" type="829" open="0"/>
+            <listitem id="uO8b1uRuSHs8j" type="829" open="0"/>
+            <listitem id="uBCtmWe3BIr9v" type="829" open="0"/>
+          </listitem>
+          <listitem id="u63oLoDD2GtRD" type="813" open="1"/>
+          <listitem id="u54PcgBbilPD2" type="813" open="1"/>
+          <listitem id="uQiRVJzZ6Sr0n" type="813" open="1">
+            <listitem id="uccVm4iVnuow7" type="814" open="0"/>
+            <listitem id="u7snnTCeM6e46" type="814" open="0"/>
+            <listitem id="uph8z1lUDAzCT" type="814" open="0"/>
+            <listitem id="uMybLSSG1usI0" type="814" open="0"/>
+            <listitem id="uujGe8V51jn6X" type="814" open="0"/>
+          </listitem>
+          <listitem id="uERhzoZIyo063" type="813" open="1">
+            <listitem id="uLjSTg5vvWGfL" type="814" open="0"/>
+            <listitem id="uferzIzLnh8Z7" type="814" open="0"/>
+            <listitem id="uRCJR7XwRX5AY" type="814" open="0"/>
+            <listitem id="ubsxS5IizXx1J" type="814" open="0"/>
+            <listitem id="ut1KNJ3ORlNcf" type="814" open="0"/>
+            <listitem id="usvhZAnkgnJ4t" type="814" open="0"/>
+          </listitem>
+          <listitem id="uYvwmQGc5Okzd" type="813" open="1">
+            <listitem id="ubTEbiwGr5xk9" type="814" open="0"/>
+            <listitem id="ufONIu7nVjYKs" type="814" open="0"/>
+            <listitem id="uN0SXYPAWb4cl" type="814" open="0"/>
+            <listitem id="ueRGMaLk2lRXN" type="814" open="0"/>
+          </listitem>
+          <listitem id="uFkUweTI1KLAt" type="813" open="1">
+            <listitem id="uNCZcNKHPX1KU" type="814" open="0"/>
+            <listitem id="umHSBPSp36oTl" type="814" open="0"/>
+            <listitem id="uSW2DDolWCrYR" type="814" open="0"/>
+            <listitem id="uksxqG09fYVlY" type="814" open="0"/>
+            <listitem id="uaR5BdOuCgMPa" type="814" open="0"/>
+            <listitem id="uRJ8QErYmFMEB" type="814" open="0"/>
+          </listitem>
+          <listitem id="ufTsvOovfPS61" type="813" open="1">
+            <listitem id="uiJsq7AMP7gxG" type="814" open="0"/>
+            <listitem id="uOcDavafKYPDj" type="814" open="0"/>
+            <listitem id="uVQ9eBUxOR6b4" type="814" open="0"/>
+            <listitem id="u3Xhtu3SdAahN" type="814" open="0"/>
+            <listitem id="uY3uJ7ZDbSDYt" type="814" open="0"/>
+            <listitem id="uwxNhismSzKxT" type="814" open="0"/>
+          </listitem>
+          <listitem id="uI2FfvXIyEF4t" type="813" open="1">
+            <listitem id="uBZNuy23aH6SY" type="814" open="0"/>
+            <listitem id="upPi3RBqhcyzK" type="814" open="0"/>
+            <listitem id="uNUwb79AQ5WQw" type="814" open="0"/>
+            <listitem id="ug6Q6H7V6dIou" type="814" open="0"/>
+          </listitem>
+          <listitem id="u7rLgvj1STqKc" type="813" open="1">
+            <listitem id="usFhdYHqZq9C0" type="814" open="0"/>
+            <listitem id="uZiamgYfnEREq" type="814" open="0"/>
+            <listitem id="uivNB3FhuBXot" type="814" open="0"/>
+            <listitem id="u6QbLXbwM6Bzw" type="814" open="0"/>
+            <listitem id="u0fm96gjdAyoz" type="814" open="0"/>
+            <listitem id="uDgi8kMoGYkVe" type="814" open="0"/>
+            <listitem id="uYaHpH6coYqGG" type="814" open="0"/>
+          </listitem>
+          <listitem id="uA9JaqxdtcJdL" type="813" open="1">
+            <listitem id="uP7ASGVRedi7M" type="814" open="0"/>
+            <listitem id="uFdbK4e4qV9hA" type="814" open="0"/>
+            <listitem id="uRcRbCv4hDVar" type="814" open="0"/>
+            <listitem id="uunJSKBlaTmsH" type="814" open="0"/>
+            <listitem id="u4vYAVWQAUm2j" type="814" open="0"/>
+            <listitem id="ua6Qc2cdqEsxM" type="814" open="0"/>
+          </listitem>
+          <listitem id="ua1XOjvvzW7fj" type="813" open="1">
+            <listitem id="uKfTsDimOV8HI" type="814" open="0"/>
+            <listitem id="uPLbGl9Yglcnh" type="814" open="0"/>
+            <listitem id="ukMxZRazTrSL3" type="814" open="0"/>
+            <listitem id="u74aAAA05gym1" type="814" open="0"/>
+            <listitem id="uT6gPjwGYrJBp" type="814" open="0"/>
+          </listitem>
+          <listitem id="uGvAP1rhSZhmS" type="813" open="1">
+            <listitem id="uyAKdpzT1037I" type="814" open="0"/>
+            <listitem id="uhfgpjsPNgHNr" type="814" open="0"/>
+            <listitem id="u6mdf1rxrT3Qw" type="814" open="0"/>
+            <listitem id="uD7lXHrBabBHG" type="814" open="0"/>
+            <listitem id="u4XP0kXCvmwNk" type="814" open="0"/>
+          </listitem>
+          <listitem id="uO7izscAtpaXV" type="813" open="1"/>
+          <listitem id="uvTlML308Wj2K" type="813" open="1"/>
+          <listitem id="uFlcbYpZc77oT" type="813" open="1">
+            <listitem id="uSfyf7HO7uDkn" type="814" open="0"/>
+            <listitem id="uRc9VEsvMothA" type="814" open="0"/>
+            <listitem id="uiP7ZUrXewPlF" type="814" open="0"/>
+            <listitem id="urmG43X2AXEim" type="814" open="0"/>
+          </listitem>
+          <listitem id="uItP24qRw8Keh" type="813" open="1"/>
+          <listitem id="umuBOUUb82r38" type="813" open="1">
+            <listitem id="uGsA9AWNdM2PW" type="814" open="0"/>
+            <listitem id="u1N5V2NmkjJjz" type="814" open="0"/>
+            <listitem id="u063BIQ3iWb15" type="814" open="0"/>
+            <listitem id="uFWHye2g4zpgH" type="814" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
