@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1661019822 source:f:\fontes\workspaces\codeblocks\progii\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1661019816 source:f:\fontes\workspaces\codeblocks\progii\prog2.c
+	<stdio.h>
+	<stdlib.h>
+
+1662558696 source:f:\fontes\workspaces\c\codeblocks\progii\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1662556740 source:f:\fontes\workspaces\c\codeblocks\progii\le_escreve_tipos_de_dados.c
+	<stdio.h>
+	<stdlib.h>
+
+1662556740 source:f:\fontes\workspaces\c\codeblocks\progii\maior_igual.c
+	<stdio.h>
+	<stdlib.h>
+
+1662558309 source:f:\fontes\workspaces\c\codeblocks\progii\soma_media_prod_maior_menor.c
+	<stdio.h>
+	<stdlib.h>
+
+1662558669 source:f:\fontes\workspaces\c\codeblocks\progii\diametro_circunferencia_area.c
+	<stdio.h>
+	<stdlib.h>
+
