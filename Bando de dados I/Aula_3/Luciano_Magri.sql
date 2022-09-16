@@ -2,13 +2,13 @@ CREATE SCHEMA sm_db_devel;
 
 USE sm_db_devel;
 
-CREATE TABLE super_mercado  ( id                INT
+CREATE TABLE super_mercado  ( super_mercado_id  INT
                             , descricao         VARCHAR(100)
                             , endereco          VARCHAR(100)
                             , responsavel_id    INT
                         );
 
-CREATE TABLE funcionario( id                INT
+CREATE TABLE funcionario( funcionario_id    INT
                         , descricao         VARCHAR(100)
                         , salario           DECIMAL
                         , data_admissao     DATE
@@ -16,16 +16,16 @@ CREATE TABLE funcionario( id                INT
                         , super_mercado_id  INT
                         );
 
-CREATE TABLE prestador_servicos ( id                INT
-                                , descricao         VARCHAR(100)
-                                , tipo_servico      VARCHAR(100)
-                                , data_contrato     DATE
-                                , data_renovacao    DATE
-                                , data_pagamento    DATE
-                                , super_mercado_id  INT
+CREATE TABLE prestador_servicos ( prestador_servicos_id INT
+                                , descricao             VARCHAR(100)
+                                , tipo_servico          VARCHAR(100)
+                                , data_contrato         DATE
+                                , data_renovacao        DATE
+                                , data_pagamento        DATE
+                                , super_mercado_id      INT
                                 );
 
-CREATE TABLE imobilizados   ( id                        INT
+CREATE TABLE imobilizados   ( imobilizados_id           INT
                             , descricao                 VARCHAR(100)
                             , valor                     DECIMAL
                             , data_aquisicao            DATE
@@ -33,7 +33,7 @@ CREATE TABLE imobilizados   ( id                        INT
                             , super_mercado_id          INT
                         );
 
-CREATE TABLE faturamento    ( id                INT
+CREATE TABLE faturamento    ( faturamento_id    INT
                             , descricao         VARCHAR(100)
                             , data_faturamento  DATE
                             , valor_faturamento DECIMAL
@@ -64,6 +64,22 @@ ALTER TABLE faturamento MODIFY id INT
 PRIMARY KEY AUTO_INCREMENT;
 
 ALTER TABLE faturamento MODIFY descricao VARCHAR(100) NOT NULL;
+
+ALTER TABLE funcionario 
+ADD CONSTRAINT super_mercado_funcionario_fk FOREIGN KEY (super_mercado_id) 
+                                        REFERENCES funcionario(super_mercado_id);
+
+ALTER TABLE prestador_servicos 
+ADD CONSTRAINT super_mercado_prestador_servicos_fk FOREIGN KEY (super_mercado_id) 
+                                        REFERENCES prestador_servicos(super_mercado_id);
+
+ALTER TABLE imobilizados 
+ADD CONSTRAINT super_mercado_imobilizados_fk FOREIGN KEY (super_mercado_id) 
+                                        REFERENCES imobilizados(super_mercado_id);
+
+ALTER TABLE faturamento 
+ADD CONSTRAINT super_mercado_faturamento_fk FOREIGN KEY (super_mercado_id) 
+                                        REFERENCES faturamento(super_mercado_id);
 
 INSERT INTO super_mercado   ( descricao
                             , endereco   	      
