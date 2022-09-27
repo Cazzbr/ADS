@@ -95,6 +95,7 @@ public class Jogador {
         this.suspenso = false;
     }
 
+    @Override
     public String toString() {
         String status = "Liberado para jogar!";
         if (suspenso){
@@ -106,6 +107,7 @@ public class Jogador {
         return out;
     }
 
+    @Override
     public boolean equals(Object x){
         if (x == this){
             return true;
