@@ -2664,7 +2664,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="c4f2ff97-5ef2-11ed-ac69-2d75eac72ffc"/>
 </class_>
 <name>
-<val>Funcao</val>
+<val>Função</val>
 </name>
 <typeValue>
 <val>TEXT</val>
@@ -2701,6 +2701,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="fbb6821d-5ef2-11ed-9c16-2d75eac72ffc"/>
 <ref refid="02833cae-5ef3-11ed-bb5f-2d75eac72ffc"/>
 <ref refid="f48c9816-5ef4-11ed-a946-2d75eac72ffc"/>
+<ref refid="ec9f79d6-612b-11ed-8d03-0d76a1f81388"/>
 </reflist>
 </ownedAttribute>
 <package>
@@ -2723,7 +2724,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <val>203.0</val>
 </width>
 <height>
-<val>108.0</val>
+<val>125.0</val>
 </height>
 <diagram>
 <ref refid="84a475e0-5ef2-11ed-85e4-2d75eac72ffc"/>
@@ -2737,10 +2738,10 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="f386d82e-5ef2-11ed-8022-2d75eac72ffc"/>
 </class_>
 <name>
-<val>Nome</val>
+<val>Codigo</val>
 </name>
 <typeValue>
-<val>TEXT</val>
+<val>INT</val>
 </typeValue>
 </Property>
 <Property id="02833cae-5ef3-11ed-bb5f-2d75eac72ffc">
@@ -2748,10 +2749,10 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="f386d82e-5ef2-11ed-8022-2d75eac72ffc"/>
 </class_>
 <name>
-<val>Valor</val>
+<val>Descrição</val>
 </name>
 <typeValue>
-<val>DECIMAL</val>
+<val>TEXT</val>
 </typeValue>
 </Property>
 <Class id="14513da6-5ef3-11ed-8d39-2d75eac72ffc">
@@ -3133,10 +3134,10 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="f386d82e-5ef2-11ed-8022-2d75eac72ffc"/>
 </class_>
 <name>
-<val>Quantidade_Estoque</val>
+<val>Valor</val>
 </name>
 <typeValue>
-<val>INT</val>
+<val>DECIMAL</val>
 </typeValue>
 </Property>
 <Property id="110866e2-5ef5-11ed-9cf5-2d75eac72ffc">
@@ -3272,7 +3273,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <val>(1.0, 0.0, 0.0, 1.0, 256.4376220703125, 464.7423400878906)</val>
 </matrix>
 <points>
-<val>[(0.0, 2.076171875), (0.7398681640625, 67.59072875976562)]</val>
+<val>[(0.0, 19.076171875), (0.7398681640625, 67.59072875976562)]</val>
 </points>
 <head-connection>
 <ref refid="f38acbdc-5ef2-11ed-98b7-2d75eac72ffc"/>
@@ -3505,6 +3506,17 @@ existing classes or even new classes with specific responsibilities.</val>
 </name>
 <typeValue>
 <val>TEXT</val>
+</typeValue>
+</Property>
+<Property id="ec9f79d6-612b-11ed-8d03-0d76a1f81388">
+<class_>
+<ref refid="f386d82e-5ef2-11ed-8022-2d75eac72ffc"/>
+</class_>
+<name>
+<val>Quantidade_Estoque</val>
+</name>
+<typeValue>
+<val>INT</val>
 </typeValue>
 </Property>
 </gaphor>

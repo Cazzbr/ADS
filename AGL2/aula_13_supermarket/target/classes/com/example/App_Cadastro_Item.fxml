@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="173.0" layoutY="75.0" text="Código: " />
+      <Label layoutX="160.0" layoutY="126.0" text="Descrição:" />
+      <Label layoutX="122.0" layoutY="175.0" text="Valor Venda Un.:" />
+      <Label layoutX="147.0" layoutY="225.0" text="Quantidade:" />
+      <Button layoutX="261.0" layoutY="270.0" mnemonicParsing="false" text="Cadastrar" />
+      <TextField layoutX="240.0" layoutY="70.0" />
+      <TextField layoutX="240.0" layoutY="120.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField layoutX="240.0" layoutY="170.0" />
+      <TextField layoutX="240.0" layoutY="220.0" />
+   </children>
+</Pane>
