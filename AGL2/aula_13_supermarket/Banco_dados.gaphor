@@ -2617,6 +2617,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="ddf36a0f-5ef2-11ed-91ce-2d75eac72ffc"/>
 <ref refid="5dc5f552-5ef4-11ed-b010-2d75eac72ffc"/>
 <ref refid="61e6f268-5ef4-11ed-bde7-2d75eac72ffc"/>
+<ref refid="e54de568-646c-11ed-bff8-777374a17ae9"/>
 </reflist>
 </ownedAttribute>
 <package>
@@ -2630,7 +2631,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </Class>
 <ClassItem id="c4f450e8-5ef2-11ed-b34a-2d75eac72ffc">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 410.866455078125, 113.23805236816406)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 410.866455078125, 105.64811706542969)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -2639,7 +2640,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <val>136.0</val>
 </width>
 <height>
-<val>142.0</val>
+<val>159.0</val>
 </height>
 <diagram>
 <ref refid="84a475e0-5ef2-11ed-85e4-2d75eac72ffc"/>
@@ -2816,7 +2817,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <val>(1.0, 0.0, 0.0, 1.0, 445.15594482421875, 366.6217041015625)</val>
 </matrix>
 <points>
-<val>[(31.060223445714087, 0.696807861328125), (31.060223445714087, -111.38365173339844), (29.72210693359375, -111.38365173339844)]</val>
+<val>[(31.060223445714087, 0.696807861328125), (31.060223445714087, -101.97358703613281), (29.72210693359375, -101.97358703613281)]</val>
 </points>
 <head-connection>
 <ref refid="14551a02-5ef3-11ed-88f5-2d75eac72ffc"/>
@@ -2907,7 +2908,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <val>(1.0, 0.0, 0.0, 1.0, 276.90252685546875, 184.23805236816406)</val>
 </matrix>
 <points>
-<val>[(-3.5692520141601562, 0.0), (133.96392822265625, -0.10540827998408986)]</val>
+<val>[(-3.5692520141601562, 0.0), (133.96392822265625, 0.7920371161566777)]</val>
 </points>
 <head-connection>
 <ref refid="8c4465d4-5ef2-11ed-ab06-2d75eac72ffc"/>
@@ -3517,6 +3518,17 @@ existing classes or even new classes with specific responsibilities.</val>
 </name>
 <typeValue>
 <val>INT</val>
+</typeValue>
+</Property>
+<Property id="e54de568-646c-11ed-bff8-777374a17ae9">
+<class_>
+<ref refid="c4f2ff97-5ef2-11ed-ac69-2d75eac72ffc"/>
+</class_>
+<name>
+<val>cpf</val>
+</name>
+<typeValue>
+<val>TEXT</val>
 </typeValue>
 </Property>
 </gaphor>

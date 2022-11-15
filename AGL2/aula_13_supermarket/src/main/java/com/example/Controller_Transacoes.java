@@ -3,6 +3,8 @@ package com.example;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -41,9 +43,19 @@ public class Controller_Transacoes implements Initializable {
        }
     }
 
+    private ChangeListener<Boolean> focusListener = new ChangeListener<Boolean>(){
+        @Override
+        public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue){
+            if (!newValue){
+                System.out.println("Hi from listener");
+            }
+        }
+    };
+
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         textCodigoTransacoes.setPromptText("Código");
+        textCodigoTransacoes.focusedProperty().addListener((focusListener));
 
     } 
 }
