@@ -4,23 +4,23 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller_Cadastro_Estoque">
    <children>
       <Label layoutX="10.0" layoutY="80.0" text="Código:" />
-      <TextField layoutX="10.0" layoutY="100.0" prefHeight="30.0" prefWidth="70.0" />
+      <TextField fx:id="textCodigoEstoque" layoutX="10.0" layoutY="100.0" onKeyPressed="#onKeyPressedCodigo" prefHeight="30.0" prefWidth="70.0" />
       <Label layoutX="110.0" layoutY="80.0" text="Descricão:" />
-      <TextField editable="false" layoutX="110.0" layoutY="100.0" prefHeight="30.0" prefWidth="240.0" />
+      <TextField fx:id="textDescricaoEstoque" layoutX="110.0" layoutY="100.0" onKeyPressed="#onKeyPressedDescricao" prefHeight="30.0" prefWidth="240.0" />
       <Label layoutX="370.0" layoutY="80.0" text="Valor Un.:" />
-      <Label layoutX="450.0" layoutY="80.0" text="Qtde:" />
-      <Button layoutX="530.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" text="Buscar" />
-      <TextField editable="false" layoutX="370.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" />
-      <TextField editable="false" layoutX="450.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" />
-      <Button layoutX="272.0" layoutY="300.0" mnemonicParsing="false" text="Salvar" />
+      <Label layoutX="450.0" layoutY="80.0" text="Estoque:" />
+      <Button layoutX="530.0" layoutY="100.0" mnemonicParsing="false" onAction="#onActionButtomBuscarPressed" prefHeight="30.0" text="Buscar" />
+      <TextField fx:id="textValorUnEstoque" editable="false" layoutX="370.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" />
+      <TextField fx:id="textQtdeEstoque" editable="false" layoutX="450.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" />
+      <Button layoutX="272.0" layoutY="300.0" mnemonicParsing="false" onAction="#onActionButtonSalvarPressed" text="Salvar" />
       <Label layoutX="110.0" layoutY="155.0" text="Ajustar Descrição:" />
       <Label layoutX="96.0" layoutY="205.0" text="Ajustar Valor Venda:" />
       <Label layoutX="45.0" layoutY="255.0" text="Adicionar ao Estoque (Qtde):" />
-      <TextField layoutX="230.0" layoutY="150.0" prefWidth="300.0" />
-      <TextField layoutX="230.0" layoutY="200.0" />
-      <TextField layoutX="230.0" layoutY="250.0" />
+      <TextField fx:id="textDescricaoEstoqueNew" layoutX="230.0" layoutY="150.0" prefWidth="300.0" />
+      <TextField fx:id="textValorUnEstoqueNew" layoutX="230.0" layoutY="200.0" />
+      <TextField fx:id="textQtdeEstoquePlus" layoutX="230.0" layoutY="250.0" />
    </children>
 </Pane>

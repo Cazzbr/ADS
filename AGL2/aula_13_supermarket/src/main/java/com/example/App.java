@@ -17,39 +17,63 @@ public class App extends Application {
 
     private Scene scene;
     private BorderPane rootWindow;
+    private Stage thisStage;
+
+    private static App instance = null;
+    public App(){}
+    public static App getInstance() {
+        if(instance == null) instance = new App();
+        return instance;
+    }
+
+    public BorderPane getRootwindow(){
+        return rootWindow;
+    }
+
+    public Stage getThisStage() {
+        return thisStage;
+    }    
 
     @Override
-    public void start(Stage stage) throws IOException {
-        // criar a janela principal como uma BorderPane
+    public void start(final Stage stage) throws IOException {
+        thisStage = stage;
         rootWindow = new BorderPane();
-        // Adicionar o menu no top janela principal e a tela de início do App abaixo 
         rootWindow.setTop(createMenuBar());
         rootWindow.setCenter(loadFXML("App_Vendas_Transacoes"));
-        // Criar a Scene e adicionar no stage;
         scene = new Scene(rootWindow, 640, 480);
         stage.setScene(scene);
         stage.show();
     }
 
     private MenuBar createMenuBar(){
-        // Menu Arquivo
+        Menu fileMenu = createMenuArquivo();
+        Menu vendasMenu = createMenuVendas();
+        Menu cadastroMenu = createMenuCadastros();
+        return new MenuBar(fileMenu, vendasMenu, cadastroMenu);
+    }
+
+    private Menu createMenuArquivo(){
+        MenuItem superMarket = new MenuItem("Super Mercado");
+        superMarket.setOnAction( e -> setAction("App_Supermarket"));
         MenuItem exitMenuItem = new MenuItem("Sair");
         exitMenuItem.setOnAction(e -> Platform.exit());
-        Menu fileMenu = new Menu("Arquivo", null, exitMenuItem);
-        // Menu de vendas
+        return new Menu("Arquivo", null, superMarket, exitMenuItem);
+    }
+
+    private Menu createMenuVendas(){
         MenuItem mainWindow = new MenuItem("Vendas");
         mainWindow.setOnAction( e -> setAction("App_Vendas_Transacoes"));
-        Menu vendasMenu = new Menu("Transações", null, mainWindow);
-        // Menu de cadastro
+        return new Menu("Transações", null, mainWindow);
+    }
+
+    private Menu createMenuCadastros(){
         MenuItem miItem = new MenuItem("Cadastro item");
         miItem.setOnAction( e -> setAction("App_Cadastro_Item"));
         MenuItem miEstoque = new MenuItem("Cadastro estoque");
         miEstoque.setOnAction( e -> setAction("App_Cadastro_Estoque"));
         MenuItem miFuncionario = new MenuItem("Cadastro funcionario");
         miFuncionario.setOnAction(e -> setAction("App_Cadastro_Funcionario"));
-        Menu cadastroMenu = new Menu("Cadastro", null, miItem, miEstoque, miFuncionario);
-        // Retorna menu bar
-        return new MenuBar(fileMenu, vendasMenu, cadastroMenu);
+        return new Menu("Cadastro", null, miItem, miEstoque, miFuncionario);
     }
 
     private void setAction(String fxml_string) {
@@ -61,12 +85,16 @@ public class App extends Application {
             }
     }
 
-    private static Parent loadFXML(String fxml) throws IOException {
+    private Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public void openDocument(String fileLocation){
+        getHostServices().showDocument(fileLocation);
     }
 }

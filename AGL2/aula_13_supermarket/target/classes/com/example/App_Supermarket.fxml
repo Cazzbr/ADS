@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller_Supermarket">
+   <children>
+      <Label layoutX="178.0" layoutY="75.0" text="Nome: " />
+      <Label layoutX="161.0" layoutY="126.0" text="Endereço:" />
+      <Label layoutX="184.0" layoutY="175.0" text="CNPJ:" />
+      <Label layoutX="173.0" layoutY="225.0" text="Gerente:" />
+      <Button layoutX="261.0" layoutY="270.0" mnemonicParsing="false" onAction="#onActionAtualizarPressed" text="Atualizar" />
+      <TextField fx:id="textNomeSupermarket" layoutX="240.0" layoutY="70.0" />
+      <TextField fx:id="textEnderecoSupermarket" layoutX="240.0" layoutY="120.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField fx:id="textCnpjSupermarket" layoutX="240.0" layoutY="170.0" />
+      <ChoiceBox fx:id="choiceGerenteSupermaket" layoutX="240.0" layoutY="220.0" prefWidth="160.0" />
+   </children>
+</Pane>

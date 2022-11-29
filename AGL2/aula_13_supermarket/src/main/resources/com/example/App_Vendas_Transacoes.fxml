@@ -9,15 +9,15 @@
       <Label layoutX="10.0" layoutY="10.0" text="Código:" />
       <TextField fx:id="textCodigoTransacoes" layoutX="10.0" layoutY="30.0" onKeyPressed="#onKeyPressedCodigo" prefHeight="30.0" prefWidth="70.0" />
       <Label layoutX="110.0" layoutY="10.0" text="Descricão:" />
-      <TextField fx:id="textDescricaoTransacoes" editable="false" layoutX="110.0" layoutY="30.0" prefHeight="30.0" prefWidth="240.0" />
+      <TextField fx:id="textDescricaoTransacoes" layoutX="110.0" layoutY="30.0" onKeyPressed="#onKeyPressedDescricao" prefHeight="30.0" prefWidth="240.0" />
       <Label layoutX="370.0" layoutY="14.0" text="Valor Un.:" />
-      <Label layoutX="450.0" layoutY="14.0" text="Qtde:" />
-      <Button fx:id="botaoInserirTransacoes" layoutX="530.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionButtomInserirPressed" text="Inserir" />
       <TextField fx:id="textValorUnTransacoes" editable="false" layoutX="370.0" layoutY="30.0" prefHeight="30.0" prefWidth="60.0" />
-      <TextField fx:id="textQtdeTransacoes" layoutX="450.0" layoutY="30.0" prefHeight="30.0" prefWidth="60.0" />
-      <ListView layoutX="10.0" layoutY="80.0" prefHeight="278.0" prefWidth="580.0" />
-      <Button layoutX="480.0" layoutY="365.0" mnemonicParsing="false" text="Finalizar Venda" />
+      <Label layoutX="450.0" layoutY="14.0" text="Qtde:" />
+      <TextField fx:id="textQtdeTransacoes" layoutX="450.0" layoutY="30.0" onKeyPressed="#onKeyPressedQtde" prefHeight="30.0" prefWidth="60.0" />
+      <Button fx:id="botaoInserirTransacoes" layoutX="530.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionButtomInserirPressed" text="Inserir" />
+      <ListView fx:id="notaFiscalListView" layoutX="10.0" layoutY="80.0" prefHeight="278.0" prefWidth="580.0" />
       <Label layoutX="308.0" layoutY="370.0" text="Sub total (R$):" />
-      <Label layoutX="398.0" layoutY="370.0" prefHeight="19.0" prefWidth="63.0" />
+      <Label fx:id="labelSubTotal" layoutX="398.0" layoutY="370.0" prefHeight="19.0" prefWidth="63.0" text="0.00" />
+      <Button layoutX="480.0" layoutY="365.0" mnemonicParsing="false" onAction="#onActionButtomFinalizarVendaPressed" text="Finalizar Venda" />
    </children>
 </Pane>

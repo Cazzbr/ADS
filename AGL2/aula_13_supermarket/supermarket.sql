@@ -5,18 +5,19 @@ USE supermarket;
 CREATE TABLE supermercado ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
                           , nome                VARCHAR(100)
                           , endereco            VARCHAR(100)
+                          , cnpj                VARCHAR(100)
                           , gerente             INT UNSIGNED
                           );
 
 CREATE  TABLE mercadoria  ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
                           , codigo              INT UNSIGNED UNIQUE NOT NULL
-                          , descricao           VARCHAR(100) NOT NULL
+                          , descricao           VARCHAR(100) UNIQUE NOT NULL
                           , valor               DECIMAL(10,2) NOT NULL
                           , quantidade_estoque  INT UNSIGNED DEFAULT 0
                           , supermercado_id     INT UNSIGNED
                           );
 
-CREATE  TABLE empregado   ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
+CREATE  TABLE funcionario ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
                           , nome                VARCHAR(100) NOT NULL
                           , funcao              VARCHAR(100)
                           , endereco            VARCHAR(100)
@@ -29,34 +30,41 @@ CREATE  TABLE empregado   ( id                  INT UNSIGNED PRIMARY KEY AUTO_IN
                           
 CREATE  TABLE venda       ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
                           , data_venda          DATE
-                          , empregado_id        INT UNSIGNED
+                          , funcionario_id        INT UNSIGNED
                           );
 
-CREATE  TABLE venda_mercadoria ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
-                               , valor_mercadoria    DECIMAL(10,2)
-                               , venda_id            INT UNSIGNED
-                               , mercadoria_id     INT UNSIGNED
+CREATE  TABLE venda_mercadoria ( id                 INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
+                               , valor_mercadoria   DECIMAL(10,2)
+                               , venda_id           INT UNSIGNED
+                               , mercadoria_id      INT UNSIGNED
                                );
 
 ALTER TABLE mercadoria 
 ADD CONSTRAINT supermercado_mercadoria_fk FOREIGN KEY (supermercado_id) 
                                         REFERENCES supermercado(id);
 
-ALTER TABLE empregado 
-ADD CONSTRAINT supermercado_empregado_fk FOREIGN KEY (supermercado_id) 
-                                        REFERENCES empregado(id);
+ALTER TABLE funcionario
+ADD CONSTRAINT supermercado_funcionario_fk FOREIGN KEY (supermercado_id)
+                                        REFERENCES funcionario(id);
                                         
 ALTER TABLE venda 
-ADD CONSTRAINT empregado_venda_fk FOREIGN KEY (empregado_id) 
-                                        REFERENCES empregado(id);
+ADD CONSTRAINT funcionario_venda_fk FOREIGN KEY (funcionario_id)
+                                        REFERENCES funcionario(id) ON DELETE SET NULL;
 
 ALTER TABLE venda_mercadoria 
 ADD CONSTRAINT venda_venda_mercadoria_fk FOREIGN KEY (venda_id) 
-                                        REFERENCES venda(id);
+                                        REFERENCES venda(id) ON DELETE CASCADE;
 
 ALTER TABLE venda_mercadoria 
 ADD CONSTRAINT mercadoria_venda_mercadoria_fk FOREIGN KEY (mercadoria_id) 
-                                        REFERENCES mercadoria(id);
+                                        REFERENCES mercadoria(id) ON DELETE CASCADE;
+
+INSERT INTO supermercado VALUES ( 1
+                                , " "
+                                , " "
+                                , " "
+                                , 0
+                                );
 
 
-#DROP SCHEMA supermarket;
+# DROP SCHEMA supermarket;
