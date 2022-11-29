@@ -33,12 +33,9 @@ public class ImpresaoNotaFiscal {
             fillEnvoice();
             document.close();
             writer.close();
-            System.out.println("Done");
-        } catch (DocumentException e){
-            e.printStackTrace();
-        } catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
+        } catch (DocumentException | FileNotFoundException e){
+            App.getInstance().registerLogError(e);
+        } 
         App.getInstance().openDocument(nomeNf);
     }
 

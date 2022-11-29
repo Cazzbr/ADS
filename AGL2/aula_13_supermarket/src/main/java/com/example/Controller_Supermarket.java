@@ -37,7 +37,9 @@ public class Controller_Supermarket implements Initializable {
             stmt.setString(3, textCnpjSupermarket.getText());
             stmt.setFloat(4, 0);
             stmt.execute();
-        }catch (SQLException ex){ System.out.println(ex);};
+        }catch (SQLException | NumberFormatException ex){
+            App.getInstance().registerLogError(ex);
+        }
         App.getInstance().getRootwindow().setCenter(new FXMLLoader(App.class.getResource("App_Vendas_Transacoes.fxml")).load());
     }
 
@@ -55,6 +57,8 @@ public class Controller_Supermarket implements Initializable {
                         System.out.println("gerente é " + gerente_id);
                     }
                 }
-        }catch (SQLException e){ System.out.println(e);};
+        }catch (SQLException e){
+            App.getInstance().registerLogError(e);
+        };
     } 
 }

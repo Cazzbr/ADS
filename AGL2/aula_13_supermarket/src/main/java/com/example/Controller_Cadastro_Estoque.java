@@ -63,18 +63,21 @@ public class Controller_Cadastro_Estoque implements Initializable {
 
     @FXML
     public void onActionButtonSalvarPressed(ActionEvent e){
-        if (textQtdeEstoquePlus.getText() != ""){
-            produto.setQuantidade_estoque(produto.getQuantidade_estoque() + Integer.parseInt(textQtdeEstoquePlus.getText()));
+        try {
+            if (textQtdeEstoquePlus.getText() != ""){
+                produto.setQuantidade_estoque(produto.getQuantidade_estoque() + Integer.parseInt(textQtdeEstoquePlus.getText()));
+            }
+            produto.setValor(Float.parseFloat(textValorUnEstoqueNew.getText()));
+            produto.setDescricao(textDescricaoEstoqueNew.getText());
+            search.updateProduct(produto);
+            clearfields();
+        } catch (NumberFormatException ex) {
+            App.getInstance().registerLogError(ex);
         }
-        produto.setValor(Float.parseFloat(textValorUnEstoqueNew.getText()));
-        produto.setDescricao(textDescricaoEstoqueNew.getText());
-        search.updateProduct(produto);
-        clearfields();
     }
     
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-        // TODO Auto-generated method stub
         
     }
 

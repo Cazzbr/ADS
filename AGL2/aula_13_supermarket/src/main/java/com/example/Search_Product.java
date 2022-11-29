@@ -36,8 +36,10 @@ public class Search_Product {
                     p.setSupermercado_id(rs.getInt("supermercado_id"));
                     produtcArrayList.add(p);
                 }
-        }catch (SQLException e){ // TODO Auto-generated catch block 
-            System.out.println(e);};
+        }catch (SQLException e){ 
+            App.getInstance().registerLogError(e);
+        }
+
         if (produtcArrayList.size() == 1){
             return produtcArrayList.get(0);
         }

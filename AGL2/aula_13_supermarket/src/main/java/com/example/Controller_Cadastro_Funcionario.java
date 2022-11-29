@@ -34,7 +34,9 @@ public class Controller_Cadastro_Funcionario implements Initializable {
             stmt.setString(5, textLoginFuncionario.getText());
             stmt.setString(6, textSenhaFuncionario.getText());
             stmt.execute();
-        }catch (SQLException ex){ System.out.println(ex);};
+        }catch (SQLException ex){
+            App.getInstance().registerLogError(ex);
+        };
         clearfields();
     }
 

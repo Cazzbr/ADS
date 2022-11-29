@@ -40,19 +40,28 @@ public class Controller_Transacoes implements Initializable {
     @FXML
     public void onActionButtomInserirPressed(ActionEvent e){
         if (this.produto != null) {
+            try{
             produto.setQuantiade_nota(Integer.parseInt(textQtdeTransacoes.getText()));
             notaFiscalListView.getItems().add(produto);
             float currentSubTotal = Float.parseFloat(labelSubTotal.getText());
-            labelSubTotal.setText((currentSubTotal + produto.getValor()*produto.getQuantiade_nota()) + "");
+            labelSubTotal.setText((currentSubTotal + produto.getValor() * produto.getQuantiade_nota()) + "");
+            }catch (NumberFormatException ex){
+                App.getInstance().registerLogError(ex);
+            }
             clearSearchFields();
         }
         textCodigoTransacoes.requestFocus();
     }
 
     @FXML
-    public void onActionButtomFinalizarVendaPressed(ActionEvent e) throws IOException, ClassNotFoundException{
-        ImpresaoNotaFiscal nf = new ImpresaoNotaFiscal(notaFiscalListView.getItems(), Float.parseFloat(labelSubTotal.getText()));
-        nf.printNf();
+    public void onActionButtomFinalizarVendaPressed(ActionEvent e){
+        try {
+            ImpresaoNotaFiscal nf = new ImpresaoNotaFiscal(notaFiscalListView.getItems(), Float.parseFloat(labelSubTotal.getText()));
+            nf.printNf();
+        } catch (ClassNotFoundException | IOException | NumberFormatException ex ) {
+            App.getInstance().registerLogError(ex);
+        }
+        
         notaFiscalListView.getItems().clear();
     }
 
@@ -107,8 +116,8 @@ public class Controller_Transacoes implements Initializable {
             if (!newValue & textValorUnTransacoes.isFocused()){searchForProducts(textDescricaoTransacoes.getText(),"descricao");}
         });
         try (Connection connection = ConnectionFactory.getConnection();) {           
-        }catch (SQLException e){ // TODO Auto-generated catch block 
-            System.out.println(e);
+        }catch (SQLException e){ 
+            App.getInstance().registerLogError(e);
         };
     } 
 }

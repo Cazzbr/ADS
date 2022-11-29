@@ -30,7 +30,9 @@ public class Controller_Cadastro_Item implements Initializable {
             stmt.setFloat(3, Float.parseFloat(textValorItem.getText()));
             stmt.setInt(4, Integer.parseInt(textQuantidadeEstoqueItem.getText()));
             stmt.execute();
-        }catch (SQLException ex){ System.out.println(ex);};
+        }catch (SQLException | NumberFormatException ex){
+            App.getInstance().registerLogError(ex);
+        }
         clearfields();
     }
 

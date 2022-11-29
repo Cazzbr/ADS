@@ -11,11 +11,9 @@ public class ConnectionFactory {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT",
                     "root",
                     "rootpassword");
-            System.out.println("Conectado!");
             return con;
         } catch (SQLException e) {
-            System.out.println("Erro ao conectar no banco de dados!");
-            e.printStackTrace();
+            App.getInstance().registerLogError(e);
         }
         return null;
     }

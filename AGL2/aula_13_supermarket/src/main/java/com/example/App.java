@@ -5,9 +5,11 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -18,6 +20,7 @@ public class App extends Application {
     private Scene scene;
     private BorderPane rootWindow;
     private Stage thisStage;
+    private LogHandler logHandler = new LogHandler();
 
     private static App instance = null;
     public App(){}
@@ -79,9 +82,8 @@ public class App extends Application {
     private void setAction(String fxml_string) {
             try {
                 rootWindow.setCenter(loadFXML(fxml_string));
-            } catch (IOException e1) {
-                // TODO Auto-generated catch block
-                e1.printStackTrace();
+            } catch (IOException e) {
+                registerLogError(e);
             }
     }
 
@@ -96,5 +98,14 @@ public class App extends Application {
 
     public void openDocument(String fileLocation){
         getHostServices().showDocument(fileLocation);
+    }
+
+    public void registerLogError(Exception error) {
+        logHandler.registerLog(error);
+        Alert errorAlert = new Alert(AlertType.ERROR);
+        errorAlert.setHeaderText("Ocorreu um erro durante a execução");
+        errorAlert.setContentText(error.toString() + " ...\nPara informações adicionais, consulte o log de erros na pasta 'Logs/'");
+        errorAlert.showAndWait();
+
     }
 }
