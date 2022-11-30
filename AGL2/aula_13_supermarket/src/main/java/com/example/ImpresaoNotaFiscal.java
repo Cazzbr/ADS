@@ -41,12 +41,13 @@ public class ImpresaoNotaFiscal {
 
     private void fillEnvoice() throws IOException, DocumentException{
         document.add(new Paragraph("Nota fiscal de venda"));
+        document.add(new Paragraph("------------------------------------------------------------------------"));
         List orderedList = new List(List.ORDERED);
         for (Produto produto : nfItens) {
-            orderedList.add(new ListItem(produto.toString()));            
+            orderedList.add(new ListItem(produto.toString() + " -> Total R$ " + produto.getQuantiade_nota() * produto.getValor()));            
         }
         document.add(orderedList);
+        document.add(new Paragraph("------------------------------------------------------------------------"));
         document.add(new Paragraph("Valor total da nota: R$ " + this.valorTotalNota));
-
     }
 }

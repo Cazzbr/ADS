@@ -18,7 +18,7 @@ import java.io.IOException;
 public class App extends Application {
 
     private Scene scene;
-    private BorderPane rootWindow;
+    private static BorderPane rootWindow;
     private Stage thisStage;
     private LogHandler logHandler = new LogHandler();
 
@@ -76,7 +76,9 @@ public class App extends Application {
         miEstoque.setOnAction( e -> setAction("App_Cadastro_Estoque"));
         MenuItem miFuncionario = new MenuItem("Cadastro funcionario");
         miFuncionario.setOnAction(e -> setAction("App_Cadastro_Funcionario"));
-        return new Menu("Cadastro", null, miItem, miEstoque, miFuncionario);
+        MenuItem edFuncionario = new MenuItem("Editar Funcionario");
+        edFuncionario.setOnAction(e -> setAction("App_Cadastro_EditarFuncionario"));
+        return new Menu("Cadastros", null, miItem, miEstoque, miFuncionario, edFuncionario);
     }
 
     private void setAction(String fxml_string) {
@@ -106,6 +108,5 @@ public class App extends Application {
         errorAlert.setHeaderText("Ocorreu um erro durante a execução");
         errorAlert.setContentText(error.toString() + " ...\nPara informações adicionais, consulte o log de erros na pasta 'Logs/'");
         errorAlert.showAndWait();
-
     }
 }

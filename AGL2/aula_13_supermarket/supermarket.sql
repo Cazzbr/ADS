@@ -13,7 +13,7 @@ CREATE  TABLE mercadoria  ( id                  INT UNSIGNED PRIMARY KEY AUTO_IN
                           , codigo              INT UNSIGNED UNIQUE NOT NULL
                           , descricao           VARCHAR(100) UNIQUE NOT NULL
                           , valor               DECIMAL(10,2) NOT NULL
-                          , quantidade_estoque  INT UNSIGNED DEFAULT 0
+                          , quantidade_estoque  INT DEFAULT 0
                           , supermercado_id     INT UNSIGNED
                           );
 
@@ -30,11 +30,12 @@ CREATE  TABLE funcionario ( id                  INT UNSIGNED PRIMARY KEY AUTO_IN
                           
 CREATE  TABLE venda       ( id                  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
                           , data_venda          DATE
-                          , funcionario_id        INT UNSIGNED
+                          , valor_total         DECIMAL(10,2)
+                          , funcionario_id      INT UNSIGNED
                           );
 
 CREATE  TABLE venda_mercadoria ( id                 INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
-                               , valor_mercadoria   DECIMAL(10,2)
+                               , quantidade_produto INT UNSIGNED
                                , venda_id           INT UNSIGNED
                                , mercadoria_id      INT UNSIGNED
                                );
@@ -65,6 +66,5 @@ INSERT INTO supermercado VALUES ( 1
                                 , " "
                                 , 0
                                 );
-
 
 # DROP SCHEMA supermarket;

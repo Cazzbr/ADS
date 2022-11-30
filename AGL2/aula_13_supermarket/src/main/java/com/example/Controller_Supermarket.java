@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -24,7 +25,7 @@ public class Controller_Supermarket implements Initializable {
                     ;
 
     @FXML
-    private ChoiceBox<String> choiceGerenteSupermaket;
+    private ChoiceBox<Funcionario> choiceGerenteSupermaket;
 
 
     @FXML
@@ -35,7 +36,7 @@ public class Controller_Supermarket implements Initializable {
             stmt.setString(1, textNomeSupermarket.getText());
             stmt.setString(2, textEnderecoSupermarket.getText());
             stmt.setString(3, textCnpjSupermarket.getText());
-            stmt.setFloat(4, 0);
+            stmt.setInt(4, choiceGerenteSupermaket.getSelectionModel().getSelectedItem().getId());
             stmt.execute();
         }catch (SQLException | NumberFormatException ex){
             App.getInstance().registerLogError(ex);
@@ -45,6 +46,11 @@ public class Controller_Supermarket implements Initializable {
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+        choiceGerenteSupermaket.getItems().clear();
+        List<Funcionario> gerentes = Funcionario.getfuncionarios("select * from funcionario where funcao = 'gerente'");
+        for (Funcionario funcionario : gerentes) {
+            choiceGerenteSupermaket.getItems().add(funcionario);
+        }
         try (Connection connection = ConnectionFactory.getConnection();
             PreparedStatement stmt = connection.prepareStatement("select * from supermercado where id = 1");
             ResultSet rs = stmt.executeQuery()) {
@@ -54,11 +60,15 @@ public class Controller_Supermarket implements Initializable {
                     textCnpjSupermarket.setText(rs.getString("cnpj"));
                     int gerente_id = rs.getInt("gerente");
                     if (gerente_id != 0){
-                        System.out.println("gerente é " + gerente_id);
+                        for (Funcionario g : gerentes) {
+                            if(g.getId() == gerente_id){
+                                choiceGerenteSupermaket.getSelectionModel().select(g);
+                            }
+                        }
                     }
                 }
         }catch (SQLException e){
             App.getInstance().registerLogError(e);
         };
-    } 
+    }
 }

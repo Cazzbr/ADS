@@ -13,7 +13,7 @@ public class Produto {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
     
@@ -62,12 +62,11 @@ public class Produto {
     @Override
     public String toString(){
         String str;
-        str = padLeft((this.id + " - "), 5);
-        str += padLeft((this.codigo + ": "), 10);
+        str = padLeft((this.codigo + ": "), 10);
         str += padRight((this.descricao), 40);
-        str += padLeft((" | R$:" + this.valor), 12);
+        str += padRight((" | Val. Un. R$: " + this.valor), 25);
         if (this.quantiade_nota != 0){
-            str += padLeft((" Qtde Venda: " + this.quantiade_nota), 25);
+            str += padRight((" * Qtde: " + this.quantiade_nota), 15);
         }
         return str;
     }
