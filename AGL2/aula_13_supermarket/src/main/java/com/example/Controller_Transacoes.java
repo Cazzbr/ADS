@@ -7,7 +7,6 @@ import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -55,6 +54,13 @@ public class Controller_Transacoes implements Initializable {
     }
 
     @FXML
+    public void onKeyPressedCodigo(KeyEvent event){
+        if(event.getCode().equals(KeyCode.ENTER)){
+            searchForProducts(textCodigoTransacoes.getText(), "codigo");
+       }
+    }
+
+    @FXML
     private void onKeyPressedQtde(KeyEvent event){
         if(event.getCode().equals(KeyCode.ENTER)) {
             onActionButtomInserirPressed(null);    
@@ -62,16 +68,9 @@ public class Controller_Transacoes implements Initializable {
     }
 
     @FXML
-    public void onKeyPressedCodigo(KeyEvent event){
-        if(event.getCode().equals(KeyCode.ENTER)){
-            textDescricaoTransacoes.requestFocus();
-       }
-    }
-
-    @FXML
     public void onKeyPressedDescricao(KeyEvent event){
         if(event.getCode().equals(KeyCode.ENTER)){
-            textValorUnTransacoes.requestFocus();
+            searchForProducts(textDescricaoTransacoes.getText(),"descricao");
        }
     }
 
@@ -117,12 +116,6 @@ public class Controller_Transacoes implements Initializable {
     public void initialize(URL arg0, ResourceBundle arg1) {
         textCodigoTransacoes.setPromptText("Pesquisar");
         textDescricaoTransacoes.setPromptText("Pesquisar");
-        textCodigoTransacoes.focusedProperty().addListener((ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) -> {
-            if (!newValue & textDescricaoTransacoes.isFocused()){searchForProducts(textCodigoTransacoes.getText(), "codigo");}
-        });
-        textDescricaoTransacoes.focusedProperty().addListener((ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) -> {
-            if (!newValue & textValorUnTransacoes.isFocused()){searchForProducts(textDescricaoTransacoes.getText(),"descricao");}
-        });
         try (Connection connection = ConnectionFactory.getConnection();) {           
         }catch (SQLException e){ 
             App.getInstance().registerLogError(e);

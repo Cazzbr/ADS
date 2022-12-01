@@ -6,7 +6,7 @@ public class Produto {
     private String descricao;
     private float valor;
     private int quantidade_estoque;
-    private int quantiade_nota;
+    private int quantidade_nota;
     private int supermercado_id;
     
     public int getId() {
@@ -45,10 +45,10 @@ public class Produto {
     }
 
     public int getQuantiade_nota() {
-        return quantiade_nota;
+        return quantidade_nota;
     }
     public void setQuantiade_nota(int quantiade_nota) {
-        this.quantiade_nota = quantiade_nota;
+        this.quantidade_nota = quantiade_nota;
     }
 
     public int getSupermercado_id() {
@@ -64,8 +64,8 @@ public class Produto {
         str = padLeft((this.codigo + ": "), 10);
         str += padRight((this.descricao), 40);
         str += padRight((" | Val. Un. R$: " + this.valor), 25);
-        if (this.quantiade_nota != 0){
-            str += padRight((" * Qtde: " + this.quantiade_nota), 15);
+        if (this.quantidade_nota != 0){
+            str += padRight((" * Qtde: " + this.quantidade_nota), 15);
         }
         return str;
     }

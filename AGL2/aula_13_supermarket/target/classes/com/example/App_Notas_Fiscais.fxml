@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller_NotasFiscais">
+   <children>
+      <Label layoutX="15.0" layoutY="10.0" text="Selecione a Nota Fiscal:" />
+      <ChoiceBox fx:id="choiceNotaFiscal" layoutX="15.0" layoutY="30.0" onAction="#onEventSelectChangeNotaFiscal" prefWidth="400.0" />
+      <Button fx:id="botaoImprimirNotaFiscal" layoutX="440.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionButtomImprimirNotaPressed" text="Imprimir Nota Fiscal" />
+      <ListView fx:id="notaFiscalListView" layoutX="10.0" layoutY="80.0" prefHeight="300.0" prefWidth="580.0" />
+   </children>
+</Pane>

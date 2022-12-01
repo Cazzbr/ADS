@@ -66,7 +66,9 @@ public class App extends Application {
     private Menu createMenuVendas(){
         MenuItem mainWindow = new MenuItem("Vendas");
         mainWindow.setOnAction( e -> setAction("App_Vendas_Transacoes"));
-        return new Menu("Transações", null, mainWindow);
+        MenuItem notasFiscais = new MenuItem("Notas Fiscais");
+        notasFiscais.setOnAction( e -> setAction("App_Notas_Fiscais"));
+        return new Menu("Transações", null, mainWindow, notasFiscais);
     }
 
     private Menu createMenuCadastros(){
