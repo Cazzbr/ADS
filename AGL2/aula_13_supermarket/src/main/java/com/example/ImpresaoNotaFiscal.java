@@ -40,7 +40,11 @@ public class ImpresaoNotaFiscal {
     }
 
     private void fillEnvoice() throws IOException, DocumentException{
+        SuperMercado s  = Search_SuperMarket.search();
         document.add(new Paragraph("Nota fiscal de venda"));
+        document.add(new Paragraph(s.getNome()));
+        document.add(new Paragraph("Endereço: " + s.getEndereco()));
+        document.add(new Paragraph("CNPJ: " + s.getCnpj()));
         document.add(new Paragraph("------------------------------------------------------------------------"));
         List orderedList = new List(List.ORDERED);
         for (Produto produto : nfItens) {

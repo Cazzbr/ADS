@@ -7,7 +7,6 @@ public class Produto {
     private float valor;
     private int quantidade_estoque;
     private int quantiade_nota;
-    
     private int supermercado_id;
     
     public int getId() {

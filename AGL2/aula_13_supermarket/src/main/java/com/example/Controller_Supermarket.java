@@ -2,10 +2,6 @@ package com.example;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -30,17 +26,18 @@ public class Controller_Supermarket implements Initializable {
 
     @FXML
     public void onActionAtualizarPressed(ActionEvent e) throws IOException{
-        String sql = "update supermercado set nome=?, endereco=?, cnpj=?, gerente=? where id=1";
-        try (Connection connection = ConnectionFactory.getConnection();
-            PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setString(1, textNomeSupermarket.getText());
-            stmt.setString(2, textEnderecoSupermarket.getText());
-            stmt.setString(3, textCnpjSupermarket.getText());
-            stmt.setInt(4, choiceGerenteSupermaket.getSelectionModel().getSelectedItem().getId());
-            stmt.execute();
-        }catch (SQLException | NumberFormatException ex){
-            App.getInstance().registerLogError(ex);
+        SuperMercado s = new SuperMercado();
+        s.setId(1);
+        s.setNome(textNomeSupermarket.getText());
+        s.setEndereco(textEnderecoSupermarket.getText());
+        s.setCnpj(textCnpjSupermarket.getText());
+        int gerente = 0;
+        Funcionario g = choiceGerenteSupermaket.getSelectionModel().getSelectedItem();
+        if (g != null){
+            gerente = g.getId();
         }
+        s.setGerente(gerente);
+        Search_SuperMarket.updateSuperMarket(s);
         App.getInstance().getRootwindow().setCenter(new FXMLLoader(App.class.getResource("App_Vendas_Transacoes.fxml")).load());
     }
 
@@ -51,24 +48,17 @@ public class Controller_Supermarket implements Initializable {
         for (Funcionario funcionario : gerentes) {
             choiceGerenteSupermaket.getItems().add(funcionario);
         }
-        try (Connection connection = ConnectionFactory.getConnection();
-            PreparedStatement stmt = connection.prepareStatement("select * from supermercado where id = 1");
-            ResultSet rs = stmt.executeQuery()) {
-                while (rs.next()) {
-                    textNomeSupermarket.setText(rs.getString("nome"));
-                    textEnderecoSupermarket.setText(rs.getString("endereco"));
-                    textCnpjSupermarket.setText(rs.getString("cnpj"));
-                    int gerente_id = rs.getInt("gerente");
-                    if (gerente_id != 0){
-                        for (Funcionario g : gerentes) {
-                            if(g.getId() == gerente_id){
-                                choiceGerenteSupermaket.getSelectionModel().select(g);
-                            }
-                        }
-                    }
+        SuperMercado s  = Search_SuperMarket.search();
+        textNomeSupermarket.setText(s.getNome());
+        textEnderecoSupermarket.setText(s.getEndereco());
+        textCnpjSupermarket.setText(s.getCnpj());
+        int gerente_id = s.getGerente();
+        if (gerente_id != 0){
+            for (Funcionario g : gerentes) {
+                if(g.getId() == gerente_id){
+                    choiceGerenteSupermaket.getSelectionModel().select(g);
                 }
-        }catch (SQLException e){
-            App.getInstance().registerLogError(e);
-        };
+            }
+        }
     }
 }

@@ -40,14 +40,18 @@ CREATE  TABLE venda_mercadoria ( id                 INT UNSIGNED PRIMARY KEY AUT
                                , mercadoria_id      INT UNSIGNED
                                );
 
-ALTER TABLE mercadoria 
-ADD CONSTRAINT supermercado_mercadoria_fk FOREIGN KEY (supermercado_id) 
-                                        REFERENCES supermercado(id);
+ALTER TABLE supermercado
+ADD CONSTRAINT funcionario_supermercado_fk FOREIGN KEY (gerente)
+                                        REFERENCES funcionario(id) ON DELETE SET NULL;
 
 ALTER TABLE funcionario
 ADD CONSTRAINT supermercado_funcionario_fk FOREIGN KEY (supermercado_id)
-                                        REFERENCES funcionario(id);
-                                        
+                                        REFERENCES supermercado(id);
+
+ALTER TABLE mercadoria
+ADD CONSTRAINT supermercado_mercadoria__fk FOREIGN KEY (supermercado_id)
+                                        REFERENCES supermercado(id);
+
 ALTER TABLE venda 
 ADD CONSTRAINT funcionario_venda_fk FOREIGN KEY (funcionario_id)
                                         REFERENCES funcionario(id) ON DELETE SET NULL;
@@ -64,7 +68,7 @@ INSERT INTO supermercado VALUES ( 1
                                 , " "
                                 , " "
                                 , " "
-                                , 0
+                                , NULL
                                 );
 
 # DROP SCHEMA supermarket;
