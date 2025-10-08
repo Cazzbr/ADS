@@ -1,0 +1,56 @@
+public class Tests {
+    public static void main(String[] args) throws Exception {
+        TreeTAD t = new TreeTAD();
+        System.out.println("Está vazia: " + t.estaVazia());
+        t.insere(80);
+        t.insere(60);
+        t.insere(100);
+        t.insere(50);
+        t.insere(70);
+        t.insere(90);
+        t.insere(110);
+        System.out.println("---------------------------------------------------");
+        t.imprimeArvore();
+        System.out.println("---------------------------------------------------");
+        System.out.println("Está vazia: " + t.estaVazia());
+        System.out.println("Pesquisa 100: " + t.pesquisa(100));
+        System.out.println("Pesquisa 0: " + t.pesquisa(0));
+        System.out.println("Maior valor: " + t.acessaMaior());
+        System.out.println("Menor valor: " + t.acessaMenor());
+        System.out.println("---------------------------------------------------");
+        System.out.println("Imprime em ordem!");
+        t.imprimeEmOrdem();
+        System.out.println("---------------------------------------------------");
+        System.out.println("Imprime pós ordem!");
+        t.imprimePosOrdem();
+        System.out.println("---------------------------------------------------");
+        System.out.println("Imprime pré ordem!");
+        t.imprimePreOrdem();
+        System.out.println("---------------------------------------------------");
+        System.out.println("Tamanho: " + t.tamanho());
+        System.out.println("---------------------------------------------------");
+        System.out.println("Vetor em ordem");
+        System.out.println(t.criaVetorEmOrdem());
+        System.out.println("Limpando... ");
+        t.limpa();
+        System.out.println("Imprimindo arvore limpa...");
+        t.imprimeArvore();
+        System.out.println("---------------------------------------------------");
+        System.out.println("Balanceamento estático, criando arvore desbalanceada.... ");
+        t.insere(50);
+        t.insere(60);
+        t.insere(70);
+        t.insere(80);
+        t.insere(90);
+        t.insere(100);
+        t.insere(110);
+        t.insere(120);
+        t.imprimeArvore();
+        System.out.println("Altura é: " + t.altura());
+        System.out.println("Balancenado arvore...");
+        t.balanceamentoEstatico();
+        t.imprimeArvore();
+        System.out.println("Altura é: " + t.altura());
+        System.out.println("---------------------------------------------------");
+    }
+}

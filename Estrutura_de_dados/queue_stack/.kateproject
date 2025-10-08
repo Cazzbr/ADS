@@ -1,0 +1,30 @@
+{
+    "name": "JavaProject",
+    "files": [
+        {
+            "directories": ".",
+            "exclude": [
+                "bin",
+                "out",
+                "build",
+                "*.class",
+                "*.log"
+            ],
+            "followSymlinks": true
+        }
+    ],
+    "build": {
+        "directory": ".",
+        "build": "javac -d bin $(find src -name \"*.java\")",
+        "clean": "rm -rf bin/*",
+        "run": "java -cp bin Main"
+    },
+    "index": {
+        "enabled": true,
+        "filters": [
+            "*.java",
+            "*.md",
+            "*.txt"
+        ]
+    }
+}

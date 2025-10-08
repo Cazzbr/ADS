@@ -1,0 +1,546 @@
+!SESSION 2025-09-02 19:57:10.837 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.8
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -data /home/lmagri/Documents/coding/queue_stack/.jdtls-cache
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:19.560
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:20.142
+!MESSAGE Started org.eclipse.buildship.core 449ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:20.151
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:21.435
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:21.651
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:21.663
+!MESSAGE Initializing Java Language Server 1.50.0.202508221544
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:24.494
+!MESSAGE ProjectRegistryRefreshJob finished 4342ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:24.801
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:24.803
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:24.949
+!MESSAGE RepositoryRegistryUpdateJob finished 7ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:25.036
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.145
+!MESSAGE Workspace initialized in 1204ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.154
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.289
+!MESSAGE Updated workspace folders in 25 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.328
+!MESSAGE Try to create an invisible project for the workspace /home/lmagri/Documents/coding/queue_stack
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.330
+!MESSAGE Creating the Java project queue_stack_109dd21c
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:26.583
+!MESSAGE Projects:
+Java Runtimes:
+  default: /usr/lib/jvm/java-21-openjdk-amd64  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 19: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 20: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 21: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 22: -
+  Java Platform, Standard Edition 23: -
+  Java Platform, Standard Edition 24: -
+  Java Platform, Standard Edition 25: -
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.467
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.471
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.482
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.492
+!MESSAGE Unable to locate JDK types through index. Attempting to rebuild all indexes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.524
+!MESSAGE Finished creating the Java project queue_stack_109dd21c
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2025-09-02 19:57:27.646
+!MESSAGE Failed to create the invisible project.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to create linked resource from '/home/lmagri/Documents/coding/queue_stack' to the invisible project 'queue_stack_109dd21c'.
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:373)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:144)
+	at org.eclipse.jdt.ls.core.internal.handlers.DocumentLifeCycleHandler.resolveCompilationUnit(DocumentLifeCycleHandler.java:65)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleOpen(BaseDocumentLifeCycleHandler.java:425)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.lambda$0(BaseDocumentLifeCycleHandler.java:357)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didOpen(BaseDocumentLifeCycleHandler.java:357)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didOpen(JDTLanguageServer.java:895)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$1(ParentProcessWatcher.java:144)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.core.internal.resources.ResourceException: '/home/lmagri/Documents/coding/queue_stack' is not a valid location for linked resources.
+	at org.eclipse.core.internal.resources.Resource.assertLinkRequirements(Resource.java:212)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:690)
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:357)
+	... 23 more
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 0 2025-09-02 19:57:27.649
+!MESSAGE Failed to create linked resource from '/home/lmagri/Documents/coding/queue_stack' to the invisible project 'queue_stack_109dd21c'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: '/home/lmagri/Documents/coding/queue_stack' is not a valid location for linked resources.
+	at org.eclipse.core.internal.resources.Resource.assertLinkRequirements(Resource.java:212)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:690)
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:357)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:144)
+	at org.eclipse.jdt.ls.core.internal.handlers.DocumentLifeCycleHandler.resolveCompilationUnit(DocumentLifeCycleHandler.java:65)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleOpen(BaseDocumentLifeCycleHandler.java:425)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.lambda$0(BaseDocumentLifeCycleHandler.java:357)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didOpen(BaseDocumentLifeCycleHandler.java:357)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didOpen(JDTLanguageServer.java:895)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$1(ParentProcessWatcher.java:144)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2025-09-02 19:57:27.650
+!MESSAGE '/home/lmagri/Documents/coding/queue_stack' is not a valid location for linked resources.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.665
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:27.768
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:32.696
+!MESSAGE Reconciled 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:33.652
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:33.666
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 19:57:33.693
+!MESSAGE Validated 1. Took 386 ms
+
+!ENTRY org.eclipse.buildship.core 2 0 2025-09-02 19:57:34.427
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:151)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:111)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3693)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.Reader.read(Reader.java:265)
+	at com.google.common.io.CharStreams.copyReaderToBuilder(CharStreams.java:119)
+	at com.google.common.io.CharStreams.toStringBuilder(CharStreams.java:177)
+	at com.google.common.io.CharStreams.toString(CharStreams.java:163)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:165)
+	... 4 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:52.475
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:56.569
+!MESSAGE Updated workspace folders in 38 ms: Added 0 folder(s), removed1 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:56.577
+!MESSAGE Projects:
+Java Runtimes:
+  default: /usr/lib/jvm/java-21-openjdk-amd64  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 19: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 20: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 21: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 22: -
+  Java Platform, Standard Edition 23: -
+  Java Platform, Standard Edition 24: -
+  Java Platform, Standard Edition 25: -
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:57.066
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:59.846
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-02 20:06:59.852
+!MESSAGE >> exit
+!SESSION 2025-09-08 20:24:31.692 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.8
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -data /home/lmagri/Documents/coding/queue_stack/.jdtls-cache
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-09-08 20:24:37.167
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:40.203
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:40.613
+!MESSAGE Started org.eclipse.buildship.core 291ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:40.620
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:41.537
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:41.702
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:41.717
+!MESSAGE Initializing Java Language Server 1.50.0.202508221544
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:44.407
+!MESSAGE ProjectRegistryRefreshJob finished 3786ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:44.715
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:44.717
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:44.828
+!MESSAGE RepositoryRegistryUpdateJob finished 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:44.881
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:46.108
+!MESSAGE Workspace initialized in 1293ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:46.119
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:46.195
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:46.546
+!MESSAGE Updated workspace folders in 384 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:49.749
+!MESSAGE Projects:
+jdt.ls-java-project: /home/lmagri/Documents/coding/queue_stack/.jdtls-cache/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+    /usr/lib/jvm/java-21-openjdk-amd64/lib/jrt-fs.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-21-openjdk-amd64  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-21-openjdk-amd64
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-21-openjdk-amd64
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 19: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 20: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 21: /usr/lib/jvm/java-21-openjdk-amd64
+  Java Platform, Standard Edition 22: -
+  Java Platform, Standard Edition 23: -
+  Java Platform, Standard Edition 24: -
+  Java Platform, Standard Edition 25: -
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:50.178
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:50.179
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:50.234
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:52.033
+!MESSAGE Reconciled 1. Took 54 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:54.034
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:54.076
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:24:54.113
+!MESSAGE Validated 1. Took 1426 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:16.908
+!MESSAGE Reconciled 1. Took 76 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:19.318
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:19.320
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:19.323
+!MESSAGE Validated 1. Took 410 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:28.629
+!MESSAGE Reconciled 1. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:30.409
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:30.411
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:30.413
+!MESSAGE Validated 1. Took 397 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:27:49.192
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:54:32.823
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-08 20:54:32.834
+!MESSAGE >> exit
+!SESSION 2025-09-14 10:45:16.533 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.8
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -data /home/lmagri/Documents/coding/queue_stack/.jdtls-cache
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-09-14 10:45:22.048
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:25.563
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:26.064
+!MESSAGE Started org.eclipse.buildship.core 311ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:26.065
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:27.199
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:27.242
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:27.250
+!MESSAGE Initializing Java Language Server 1.50.0.202508221544
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:30.057
+!MESSAGE ProjectRegistryRefreshJob finished 3989ms
+!SESSION 2025-09-14 10:45:41.131 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.8
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -data /home/lmagri/Documents/coding/queue_stack/.jdtls-cache
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-09-14 10:45:46.019
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:48.857
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:49.146
+!MESSAGE Started org.eclipse.buildship.core 209ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:49.148
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:49.819
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:49.938
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:49.945
+!MESSAGE Initializing Java Language Server 1.50.0.202508221544
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:52.727
+!MESSAGE ProjectRegistryRefreshJob finished 3577ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:53.211
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:53.213
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:53.307
+!MESSAGE RepositoryRegistryUpdateJob finished 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-14 10:45:53.334
+!MESSAGE >> initialized
