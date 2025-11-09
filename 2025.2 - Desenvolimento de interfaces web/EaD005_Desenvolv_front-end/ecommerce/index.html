@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Do Pé ao Prato - A sua fruteira de confiança"
+        />
+        <meta
+            name="keywords"
+            content="Fruteira, E-commerce, Frutas, Legumes, Padaria"
+        />
+        <meta name="author" content="Luciano Magri" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Do Pé Ao Prato - A sua fruteira de confiança</title>
+        <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <script type="text/javascript" src="Scripts.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <header>
+                <div class="logo">
+                    <img src="imagens/img_logo.PNG" alt="Logo" />
+                </div>
+
+                <div class="header-image">
+                    <img src="imagens/img_header.PNG" alt="Header image" />
+                </div>
+            </header>
+        </header>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <aside>
+            <nav>
+                <a id="frutas_menu" href="#frutas" class="active"
+                    ><span class="icon">🍎</span>Frutas</a
+                >
+                <a id="verduras_menu" href="#verduras"
+                    ><span class="icon">🥦</span>Verduras</a
+                >
+                <a id="padaria_menu" href="#padaria"
+                    ><span class="icon">🥖</span>Padaria</a
+                >
+                <button
+                    id="open-cart-btn"
+                    aria-label="Abrir carrinho de compras"
+                    class="open-cart-btn"
+                >
+                    🛒 Carrinho
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </button>
+            </nav>
+        </aside>
+        <div
+            id="cart-overlay"
+            class="cart-overlay"
+            aria-hidden="true"
+            role="dialog"
+            aria-modal="true"
+            tabindex="-1"
+        >
+            <div class="cart-modal" role="document">
+                <h2>Meu Carrinho</h2>
+                <div id="cart-items">
+                    <!-- Cart content items will be injected here -->
+                </div>
+                <button id="checkout-btn" class="checkout-btn" type="button">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+        <main id="containerID" class="container">
+            <section id="frutas">
+                <h2>Frutas</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <img src="imagens/frutas/maca.png" alt="Maçã" />
+                        <h3>Maçã</h3>
+                        <p>Frutas frescas e suculentas para sua saúde.</p>
+                        <p class="price">R$ 5,00 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/frutas/banana.png" alt="Banana" />
+                        <h3>Banana</h3>
+                        <p>Banana orgânica, doce e perfeita para snacks.</p>
+                        <p class="price">R$ 3,50 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/frutas/laranja.png" alt="Laranja" />
+                        <h3>Laranja</h3>
+                        <p>Laranja suculenta cultivada localmente.</p>
+                        <p class="price">R$ 4,00 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/frutas/melancia.png" alt="Melancia" />
+                        <h3>Melancia</h3>
+                        <p>Refrescante e doce, ótima para verão.</p>
+                        <p class="price">R$ 2,50 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/frutas/uvas.png" alt="Uvas" />
+                        <h3>Uvas</h3>
+                        <p>Uvas frescas e saborosas para suas receitas.</p>
+                        <p class="price">R$ 6,00 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="verduras">
+                <h2>Verduras</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <img src="imagens/verduras/alface.png" alt="Alface" />
+                        <h3>Alface</h3>
+                        <p>Folhas verdes fresquinhas para sua salada.</p>
+                        <p class="price">R$ 2,00 por unidade</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img
+                            src="imagens/verduras/espinafre.png"
+                            alt="Espinafre"
+                        />
+                        <h3>Espinafre</h3>
+                        <p>Rico em ferro. Ideal para pratos saudáveis.</p>
+                        <p class="price">R$ 4,00 por maço</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/verduras/couve.png" alt="Couve" />
+                        <h3>Couve</h3>
+                        <p>
+                            Folhas crocantes e nutritivas para qualquer receita.
+                        </p>
+                        <p class="price">R$ 3,00 por maço</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/verduras/rucula.png" alt="Rúcula" />
+                        <h3>Rúcula</h3>
+                        <p>Sabor marcante para sua salada ou acompanhamento.</p>
+                        <p class="price">R$ 3,50 por maço</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagens/verduras/pepino.png" alt="Pepino" />
+                        <h3>Pepino</h3>
+                        <p>Ideal para saladas e refrescos.</p>
+                        <p class="price">R$ 2,50 / kg</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="padaria">
+                <h2>Padaria</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <img
+                            src="imagens/padaria/pao_frances.png"
+                            alt="Pão Francês"
+                        />
+                        <h3>Pão Francês</h3>
+                        <p>Delicioso pão francês assado na hora.</p>
+                        <p class="price">R$ 0,50 por unidade</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img
+                            src="imagens/padaria/bolo_chocolate.png"
+                            alt="Bolo de Chocolate"
+                        />
+                        <h3>Bolo de Chocolate</h3>
+                        <p>
+                            Tradicional bolo fofinho com cobertura de chocolate.
+                        </p>
+                        <p class="price">R$ 20,00 por unidade</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img
+                            src="imagens/padaria/croissant.png"
+                            alt="Croissant"
+                        />
+                        <h3>Croissant</h3>
+                        <p>Massa folhada perfeita para seu café da manhã.</p>
+                        <p class="price">R$ 4,00 por unidade</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img
+                            src="imagens/padaria/pao_integral.png"
+                            alt="Pão Integral"
+                        />
+                        <h3>Pão Integral</h3>
+                        <p>Mais fibra e sabor para sua alimentação.</p>
+                        <p class="price">R$ 7,00 por unidade</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img
+                            src="imagens/padaria/biscotti.png"
+                            alt="Biscotti"
+                        />
+                        <h3>Biscotti</h3>
+                        <p>Biscoitos crocantes para acompanhar seu chá.</p>
+                        <p class="price">R$ 3,00 por pacote</p>
+                        <div class="btn-container">
+                            <button
+                                class="remove-btn"
+                                type="button"
+                                aria-label="Remover um item"
+                            >
+                                −
+                            </button>
+                            <button
+                                class="add-btn"
+                                type="button"
+                                aria-label="Adicionar um item"
+                            >
+                                +
+                            </button>
+                            <div
+                                class="cart-icon"
+                                aria-label="Carrinho de compras"
+                            >
+                                🛒
+                                <span class="cart-badge" aria-live="polite"
+                                    >0</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div
+                class="footer-contact"
+                role="contentinfo"
+                aria-label="Contact information"
+            >
+                <p>
+                    Telefone: (11) 99999-9999
+                    <span class="pipe-separator">|</span>
+                    Email:
+                    <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+                    <span class="pipe-separator">|</span>
+                    Endereço: Rua Principal, 123
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
