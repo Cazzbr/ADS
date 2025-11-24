@@ -1,0 +1,12 @@
+/* css/themes/clean.css */
+:root{
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #6b7280;
+  --accent: #0b6efd;
+  --input-bg: #ffffff;
+  --input-fg: #111111;
+  --card-bg: #f7f9ff;
+  --border: #e6e9ef;
+  --shadow: 0 6px 18px rgba(11,110,253,0.08);
+}

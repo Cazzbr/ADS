@@ -1,0 +1,13 @@
+/* css/themes/cyan.css */
+:root{
+  --bg: #e6fbff;
+  --fg: #042a2b;
+  --muted: #0f5657;
+  --accent: #06b6d4;
+  --input-bg: #ffffff;
+  --input-fg: #042a2b;
+  --card-bg: #f0feff;
+  --border: #cdeff3;
+  --shadow: 0 6px 18px rgba(6,182,212,0.06);
+}
+.theme-btn{border-color:rgba(6,182,212,0.25)}

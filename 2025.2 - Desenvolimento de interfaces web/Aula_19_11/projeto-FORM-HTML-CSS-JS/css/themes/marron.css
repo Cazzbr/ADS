@@ -1,0 +1,13 @@
+/* css/themes/marron.css */
+:root{
+  --bg: #fff7f2;
+  --fg: #3b2f2f;
+  --muted: #6b5454;
+  --accent: #8b4513;
+  --input-bg: #fffaf6;
+  --input-fg: #3b2f2f;
+  --card-bg: #fff4ef;
+  --border: #f0ded6;
+  --shadow: 0 6px 18px rgba(139,69,19,0.06);
+}
+.theme-btn{border-color:rgba(139,69,19,0.16)}

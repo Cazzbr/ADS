@@ -1,0 +1,184 @@
+/* css/main.css - estilos comuns que usam variáveis definidas em cada tema */
+:root {
+    --bg: #ffffff;
+    --fg: #222222;
+    --muted: #666666;
+    --accent: #0b6efd;
+    --input-bg: #fff;
+    --input-fg: #111;
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --border: #ccc;
+    --radius: 10px;
+    --base-font: 16px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+html {
+    font-size: var(--base-font);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
+    background: var(--bg);
+    color: var(--fg);
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+header,
+main,
+footer {
+    max-width: 980px;
+    margin: 0 auto;
+}
+header h1 {
+    margin: 0 0 0.25rem;
+}
+header p {
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+}
+
+/* Controls centralized */
+.controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.theme-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition:
+        transform 0.12s ease,
+        border-color 0.12s;
+}
+.theme-btn .swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.theme-btn.active {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+.font-controls {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    margin-left: 8px;
+}
+.font-controls button {
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+/* Form card */
+form {
+    background: var(--card-bg);
+    padding: 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+label {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--fg);
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.55rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--input-fg);
+}
+input[type="date"],
+input[type="tel"] {
+    width: 150px;
+}
+input:focus {
+    outline: 3px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    outline-offset: 2px;
+}
+.sex-fieldset {
+    border: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+.contacts label {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+.form-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.btn {
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: transparent;
+}
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Small helper */
+.selected-contacts {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--muted);
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+    .controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

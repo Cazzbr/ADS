@@ -1,0 +1,14 @@
+/* css/themes/dark.css */
+:root{
+  --bg: #0f1720;
+  --fg: #e6eef8;
+  --muted: #9aa6b2;
+  --accent: #7c5cff;
+  --input-bg: #0b1220;
+  --input-fg: #e6eef8;
+  --card-bg: #0b1220;
+  --border: #1f2937;
+  --shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+input,select,textarea{background:var(--input-bg); color:var(--input-fg); border-color:var(--border)}
+.theme-btn{box-shadow:0 4px 12px rgba(0,0,0,0.35)}

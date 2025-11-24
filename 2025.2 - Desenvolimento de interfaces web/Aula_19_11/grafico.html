@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyCup2025 Acadêmico</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        #grafico-container {
+            width: 100%;
+            height: 480px;
+        }
+    </style>
+	<script>
+		const URL_API = "http://projetos.farroupilha.ifrs.edu.br:35005/~projetoMyCup/api/performance";
+
+		function graficoPerformance() {
+			$("#status_mainPage").html("🔄 Carregando dados...");
+			$("#mainDisplay").empty();
+
+			$.get(URL_API, function (dados, status) {
+
+				if (Array.isArray(dados) && dados.length > 0) {
+
+					$("#status_mainPage").html("<p><h3 align='center'>Desempenho Geral no MyCup2025</h3></p>");
+					$("#mainDisplay").html("<div style='padding: 15px; height: 450px;'><canvas id='grafico-desempenho'></canvas></div>");
+
+					desenharGrafico(dados);
+
+				} else {
+					alert("Inconsistência na leitura do desempenho");
+				}
+
+			}, "json").fail(function () {
+				alert("Sem conexão com o servidor de dados ao consultar desempenho.");
+			});
+		}
+
+		function desenharGrafico(dados) {
+
+			const dias = dados.map(item => item.dia);
+			const apostado = dados.map(item => item.apostado);
+			const premiacao = dados.map(item => item.premiacao);
+			const mediaApostada = dados.map(item => item.mediaApostada);
+			const mediaObtida = dados.map(item => item.mediaObtida);
+
+			const ctx = document.getElementById('grafico-desempenho').getContext('2d');
+
+			new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: dias,
+					datasets: [
+						{
+							label: 'Apostado',
+							data: apostado,
+							borderColor: '#ff9800',
+							backgroundColor: 'rgba(255, 152, 0, 0.2)',
+							fill: true,
+							tension: 0.4,
+							pointRadius: 3
+						},
+						{
+							label: 'Premiação',
+							data: premiacao,
+							borderColor: '#4caf50',
+							backgroundColor: 'rgba(76, 175, 80, 0.2)',
+							fill: true,
+							tension: 0.4,
+							pointRadius: 3
+						},
+						{
+							label: 'Média Apostada',
+							data: mediaApostada,
+							borderColor: '#9c27b0',
+							backgroundColor: 'rgba(156, 39, 176, 0.2)',
+							fill: true,
+							tension: 0.4,
+							pointRadius: 3
+						},
+						{
+							label: 'Média Obtida',
+							data: mediaObtida,
+							borderColor: '#2196F3',
+							backgroundColor: 'rgba(33, 150, 243, 0.2)',
+							fill: true,
+							tension: 0.4,
+							pointRadius: 3
+						}
+					]
+				},
+				options: {
+					responsive: true,
+					maintainAspectRatio: false,
+					plugins: {
+						legend: { position: 'top' },
+						title: {
+							display: true,
+							text: 'Performance de Palpites no MyCup2025',
+							font: { size: 18 }
+						}
+					},
+					scales: {
+						x: {
+							title: {
+								display: true,
+								text: 'Dias de Jogos',
+								font: { size: 14 }
+							},
+							ticks: {
+								color: '#061b8e',
+								maxRotation: 75,
+								minRotation: 75,
+								autoSkip: false
+							}
+						},
+						y: {
+							title: {
+								display: true,
+								text: 'Moeda Virtual',
+								font: { size: 14 }
+							},
+							beginAtZero: true
+						}
+					}
+				}
+			});
+		}
+
+	// opções de carregamento da função graficoPerformance();
+	// usando Javascript
+	//window.onload = function () {
+	//    graficoPerformance();
+	//};
+
+	// usando DOMContentLoaded
+	//document.addEventListener("DOMContentLoaded", () => {
+	//    graficoPerformance();
+	//});	
+
+	// usando JQuery	
+	//$(document).ready(function () {
+	//    graficoPerformance();
+	//});	
+		
+	</script>	
+	
+	
+	
+</head>
+
+<body onload="graficoPerformance()">
+
+	<header>
+		 <section id="status-section">
+			<h2 id="status_mainPage">Carregando dados...</h2>
+		</section>
+	</header>
+
+	<main>
+		<section id="grafico-container">
+			<div id="mainDisplay"></div>
+		</section>
+		<button onclick="graficoPerformance()">Atualizar Gráfico</button>
+	</main>
+
+	<footer style="text-align:center; margin-top:40px; color:#555;">
+		<p>MyCup2025 - Sistema de Palpites em Jogos do Mundial de Clubes</p>
+	</footer>
+
+</body>
+</html>

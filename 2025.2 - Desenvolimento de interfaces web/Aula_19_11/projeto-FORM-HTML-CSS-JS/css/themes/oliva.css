@@ -1,0 +1,13 @@
+/* css/themes/oliva.css */
+:root{
+  --bg: #f4f6ec;
+  --fg: #2b2b16;
+  --muted: #556042;
+  --accent: #6b8e23;
+  --input-bg: #ffffff;
+  --input-fg: #2b2b16;
+  --card-bg: #f7f9f0;
+  --border: #e7ead8;
+  --shadow: 0 6px 18px rgba(107,142,35,0.06);
+}
+.theme-btn{border-color:rgba(107,142,35,0.18)}

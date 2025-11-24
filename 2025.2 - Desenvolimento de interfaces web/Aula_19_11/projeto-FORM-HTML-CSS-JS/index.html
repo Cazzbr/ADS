@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Formulário — Temas e Acessibilidade</title>
+
+        <!-- Estilos comuns primeiro (usa variáveis definidas pelos temas) -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Tema padrão (é carregado depois para sobrepor variáveis) -->
+        <link id="theme-stylesheet" rel="stylesheet" href="css/themes/clean.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro</h1>
+            <p>Formulário semântico com temas, controle de fonte e validação JavaScript.</p>
+        </header>
+
+        <nav aria-label="Controles de tema e acessibilidade" class="controls">
+            <div class="theme-buttons" role="toolbar" aria-label="Selecionar tema">
+                <button class="theme-btn" data-theme="css/themes/dark.css" aria-label="Tema escuro" title="Dark">
+                    <span class="swatch swatch-dark" aria-hidden="true"></span>
+                </button>
+                <button class="theme-btn active" data-theme="css/themes/clean.css" aria-label="Tema clean" title="Clean">
+                    <span class="swatch swatch-clean" aria-hidden="true"></span>
+                </button>
+                <button class="theme-btn" data-theme="css/themes/cyan.css" aria-label="Tema cyan" title="Cyan">
+                    <span class="swatch swatch-cyan" aria-hidden="true"></span>
+                </button>
+                <button class="theme-btn" data-theme="css/themes/oliva.css" aria-label="Tema oliva" title="Oliva">
+                    <span class="swatch swatch-oliva" aria-hidden="true"></span>
+                </button>
+                <button class="theme-btn" data-theme="css/themes/marron.css" aria-label="Tema marrom" title="Marron">
+                    <span class="swatch swatch-marron" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <div class="font-controls" aria-label="Ajustar tamanho da fonte">
+                <button id="font-decrease" aria-label="Diminuir fonte">A-</button>
+                <button id="font-increase" aria-label="Aumentar fonte">A+</button>
+            </div>
+        </nav>
+
+        <main>
+            <section aria-labelledby="form-title">
+                <h2 id="form-title">Formulário de contato</h2>
+
+                <form id="cadastro" action="formulário.php" method="post" enctype="multipart/form-data" onsubmit="return validar()" novalidate>
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+
+                        <label for="nome">Nome <span aria-hidden="true">*</span></label>
+                        <input id="nome" name="nome" type="text" minlength="6" required aria-required="true" placeholder="Seu nome completo" />
+
+                        <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" required aria-required="true" placeholder="nome@exemplo.com" />
+
+                        <label for="nascimento">Nascimento</label>
+                        <input id="nascimento" name="nascimento" type="date" />
+
+                        <fieldset class="sex-fieldset">
+                            <legend>Sexo</legend>
+                            <label class="radio"><input type="radio" name="sexo" value="Masculino" required /> Masculino</label>
+                            <label class="radio"><input type="radio" name="sexo" value="Feminino" /> Feminino</label>
+                        </fieldset>
+
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="telefone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" maxlength="15" />
+
+                        <label>Preferência de contato (marque uma ou mais)</label>
+                        <div class="contacts">
+                            <label><input type="checkbox" name="contato[]" value="email" /> E-mail</label>
+                            <label><input type="checkbox" name="contato[]" value="telefone" /> Telefone</label>
+                        </div>
+
+                        <div id="selected-contacts" aria-live="polite" class="selected-contacts" hidden></div>
+
+                        <label for="foto">Foto (imagem pequena)</label>
+                        <input id="foto" name="foto" type="file" accept="image/*" />
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Enviar</button>
+                        <button type="reset" class="btn">Limpar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Feito com HTML semântico, CSS e JavaScript — validação por validar()</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
