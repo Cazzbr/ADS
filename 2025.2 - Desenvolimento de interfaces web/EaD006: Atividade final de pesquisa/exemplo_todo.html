@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lista de Tarefas com Alpine.js</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                max-width: 400px;
+                margin: auto;
+                background-color: #f5f5f5;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                background: white;
+                padding: 10px;
+                margin-bottom: 6px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            button {
+                background-color: #e3342f;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 6px 10px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            button:hover {
+                background-color: #cc1f1a;
+            }
+        </style>
+    </head>
+    <body>
+        <div x-data="todoApp()">
+            <h1>Lista de Tarefas</h1>
+            <input type="text" placeholder="Adicione uma tarefa" x-model="newTask" @keydown.enter="addTask" autofocus />
+            <ul>
+                <template x-for="(task, index) in tasks" :key="index">
+                    <li>
+                        <span x-text="task"></span>
+                        <button @click="removeTask(index)">Excluir</button>
+                    </li>
+                </template>
+                <li x-show="tasks.length === 0" style="text-align: center; color: #666">Nenhuma tarefa adicionada.</li>
+            </ul>
+        </div>
+
+        <script>
+            function todoApp() {
+                return {
+                    newTask: "",
+                    tasks: [],
+                    addTask() {
+                        if (this.newTask.trim() !== "") {
+                            this.tasks.push(this.newTask.trim());
+                            this.newTask = "";
+                        }
+                    },
+                    removeTask(index) {
+                        this.tasks.splice(index, 1);
+                    },
+                };
+            }
+        </script>
+    </body>
+</html>

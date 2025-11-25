@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cadastro de Alunos com Alpine.js</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                max-width: 400px;
+                margin: auto;
+                background: #f9f9f9;
+            }
+            label {
+                display: block;
+                margin-bottom: 4px;
+                font-weight: bold;
+            }
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .error {
+                color: #d9534f;
+                font-size: 0.9em;
+                margin-bottom: 8px;
+            }
+            button {
+                background-color: #3490dc;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1em;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:disabled {
+                background-color: #7baedc;
+                cursor: not-allowed;
+            }
+            .success-message {
+                background-color: #dff0d8;
+                color: #3c763d;
+                padding: 10px;
+                border-radius: 4px;
+                margin-top: 10px;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div x-data="alunoForm()" class="form-container">
+            <h2>Cadastro de Alunos</h2>
+            <form @submit.prevent="submitForm">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" x-model="nome" @input="validateNome" />
+                <div x-show="errors.nome" class="error" x-text="errors.nome"></div>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" x-model="email" @input="validateEmail" />
+                <div x-show="errors.email" class="error" x-text="errors.email"></div>
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="text" x-model="telefone" @input="validateTelefone" placeholder="(99) 99999-9999" />
+                <div x-show="errors.telefone" class="error" x-text="errors.telefone"></div>
+
+                <button type="submit" :disabled="!formIsValid">Cadastrar</button>
+            </form>
+
+            <div x-show="successMessage" class="success-message" x-text="successMessage"></div>
+        </div>
+
+        <script>
+            function alunoForm() {
+                return {
+                    nome: "",
+                    email: "",
+                    telefone: "",
+                    errors: {},
+                    successMessage: "",
+                    validateNome() {
+                        if (this.nome.trim().length < 3) {
+                            this.errors.nome = "O nome deve ter pelo menos 3 caracteres.";
+                        } else {
+                            delete this.errors.nome;
+                        }
+                    },
+                    validateEmail() {
+                        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!re.test(this.email)) {
+                            this.errors.email = "Email inválido.";
+                        } else {
+                            delete this.errors.email;
+                        }
+                    },
+                    validateTelefone() {
+                        const re = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+                        if (!re.test(this.telefone)) {
+                            this.errors.telefone = "Telefone deve estar no formato (99) 99999-9999.";
+                        } else {
+                            delete this.errors.telefone;
+                        }
+                    },
+                    get formIsValid() {
+                        return this.nome && this.email && this.telefone && Object.keys(this.errors).length === 0;
+                    },
+                    submitForm() {
+                        this.validateNome();
+                        this.validateEmail();
+                        this.validateTelefone();
+                        if (this.formIsValid) {
+                            // Aqui você pode enviar os dados para um servidor ou API
+                            this.successMessage = "Aluno cadastrado com sucesso!";
+                            // Limpar campos
+                            this.nome = "";
+                            this.email = "";
+                            this.telefone = "";
+                            this.errors = {};
+                        } else {
+                            this.successMessage = "";
+                        }
+                    },
+                };
+            }
+        </script>
+    </body>
+</html>
