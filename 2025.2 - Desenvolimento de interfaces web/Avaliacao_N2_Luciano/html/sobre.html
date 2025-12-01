@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sobre Nós - Urban Breeze</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="../css/style_header_footer.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_sobre.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="brand">Urban Breeze</div>
+            <nav x-data="{ open: false }" class="nav">
+                <button @click="open = !open" aria-label="Toggle menu" class="menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+
+                <ul :class="{ 'show': open }" class="menu-list">
+                    <li><a href="../index.html" class="menu-item">Home</a></li>
+                    <li><a href="produtos.html" class="menu-item">Produtos</a></li>
+                    <li><a href="sobre.html" class="menu-item">Sobre</a></li>
+                    <li><a href="contato.html" class="menu-item">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="sobre">
+                <h1>Conheça a Urban Breeze</h1>
+            </div>
+            <p class="story">
+                “Nascemos da busca constante por liberdade e estilo — roupas que acompanham você nas aventuras da vida urbana, com conforto e atitude.”
+            </p>
+
+            <section>
+                <h2>Nossa História</h2>
+                <p>
+                    Fundada em 2018, a Urban Breeze surgiu da paixão de criar moda que não só veste, mas inspira. Buscamos combinar tendências contemporâneas
+                    com funcionalidade para o dia a dia agitado das cidades.
+                </p>
+            </section>
+
+            <section>
+                <h2>Nossos Valores</h2>
+                <div class="values">
+                    <div class="value-card">
+                        <h3>Qualidade</h3>
+                        <p>Usamos materiais duráveis e processos éticos para garantir que cada peça seja única.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Sustentabilidade</h3>
+                        <p>Comprometidos com o meio ambiente, investimos em práticas que minimizam impactos.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Inovação</h3>
+                        <p>Designs criativos que se adaptam ao estilo de vida dinâmico.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Urban Breeze. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

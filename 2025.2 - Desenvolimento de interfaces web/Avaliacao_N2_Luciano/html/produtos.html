@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Página de Produtos da Urban Breeze - Loja de roupas" />
+        <meta name="keywords" content="roupas, produtos, calças, camisetas, acessórios, Urban Breeze" />
+        <meta name="author" content="Luciano Magri" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Produtos - Urban Breeze</title>
+        <script type="text/javascript" src="../js/script_produto.js" defer></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/style_header_footer.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_produtos.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="brand">Urban Breeze</div>
+            <nav x-data="{ open: false }" class="nav">
+                <button @click="open = !open" aria-label="Toggle menu" class="menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+
+                <ul :class="{ 'show': open }" class="menu-list">
+                    <li><a href="../index.html" class="menu-item">Home</a></li>
+                    <li><a href="produtos.html" class="menu-item">Produtos</a></li>
+                    <li><a href="../html/sobre.html" class="menu-item">Sobre</a></li>
+                    <li><a href="../html/contato.html" class="menu-item">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main x-data="{ categoriaAtiva: 'camisetas' }" x-init="
+          const urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has('var')) {
+            categoriaAtiva = urlParams.get('var');
+          }
+        " class="product-page">
+            <nav class="category-nav">
+                <button :class="{ active: categoriaAtiva === 'camisetas' }" @click="categoriaAtiva = 'camisetas'">Camisetas</button>
+                <button :class="{ active: categoriaAtiva === 'calcas' }" @click="categoriaAtiva = 'calcas'">Calças</button>
+                <button :class="{ active: categoriaAtiva === 'acessorios' }" @click="categoriaAtiva = 'acessorios'">Acessórios</button>
+            </nav>
+
+            <template x-if="categoriaAtiva === 'camisetas'">
+                <div class="products-grid" x-data="camisetasGallery()">
+                    <template x-for="image in images" :key="image.img">
+                        <article class="product-item">
+                            <img :src="image.img" alt="T-shirt image" />
+                            <h3 x-text="image.titulo"></h3>
+                            <p>Conforto e simplicidade no seu look</p>
+                            <button>Comprar</button>
+                        </article>
+                    </template>
+                </div>
+            </template
+
+            <section class="product-list">
+                <template x-if="categoriaAtiva === 'calcas'">
+                    <div class="products-grid" x-data="calcasGallery()">
+                        <template x-for="image in images" :key="image.img">
+                            <article class="product-item">
+                                <img :src="image.img" alt="Calça Jeans" />
+                                <h3 x-text="image.titulo"></h3>
+                                <p>Estilo e conforto para o seu dia a dia</p>
+                                <button>Comprar</button>
+                            </article>
+                        </template>
+                    </div>
+                </template>
+
+                <template x-if="categoriaAtiva === 'acessorios'">
+                    <div class="products-grid" x-data="acessoriosGallery()">
+                        <template x-for="image in images" :key="image.img">
+                            <article class="product-item">
+                                <img :src="image.img" alt="Calça Jeans" />
+                                <h3 x-text="image.titulo"></h3>
+                                <p>Para um estilo despojado e moderno</p>
+                                <button>Comprar</button>
+                            </article>
+                        </template>
+                    </div>
+                </template>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2025 Urban Breeze. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

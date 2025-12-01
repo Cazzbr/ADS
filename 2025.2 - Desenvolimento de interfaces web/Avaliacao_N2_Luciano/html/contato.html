@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Página de Produtos da Urban Breeze - Loja de roupas" />
+        <meta name="keywords" content="roupas, produtos, calças, camisetas, acessórios, Urban Breeze" />
+        <meta name="author" content="Luciano Magri" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Produtos - Urban Breeze</title>
+        <script type="text/javascript" src="../js/script_contato.js" defer></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="../css/style_header_footer.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_contato.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="brand">Urban Breeze</div>
+            <nav x-data="{ open: false }" class="nav">
+                <button @click="open = !open" aria-label="Toggle menu" class="menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+
+                <ul :class="{ 'show': open }" class="menu-list">
+                    <li><a href="../index.html" class="menu-item">Home</a></li>
+                    <li><a href="produtos.html" class="menu-item">Produtos</a></li>
+                    <li><a href="sobre.html" class="menu-item">Sobre</a></li>
+                    <li><a href="contato.html" class="menu-item">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section x-data="contactForm()" class="contact-form-section">
+                <form @submit.prevent="enviarFormulario">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" x-model="nome" placeholder="Seu nome" required />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" x-model="email" placeholder="seu@email.com" required />
+
+                    <label for="telefone">Telefone</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        x-model="telefone"
+                        x-mask="(###) ###-####"
+                        placeholder="(XX) XXXXX-XXXX"
+                        pattern="[0-9+\-\s\(\)]{10,20}"
+                        required
+                    />
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" x-model="mensagem" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                    <p x-show="erro" x-text="erro" style="color: red; margin-top: 10px"></p>
+                </form>
+
+                <!-- Modal de sucesso -->
+                <template x-if="modalAberto">
+                    <div
+                        class="modal-backdrop"
+                        @click.away="modalAberto = false"
+                        @keydown.escape.window="modalAberto = false"
+                        tabindex="0"
+                        x-trap.noscroll="modalAberto"
+                    >
+                        <div class="modal-content" @click.stop>
+                            <p>Mensagem enviada com sucesso! Obrigado pelo contato.</p>
+                            <button @click="modalAberto = false">Fechar</button>
+                        </div>
+                    </div>
+                </template>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2025 Urban Breeze. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

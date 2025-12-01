@@ -1,0 +1,100 @@
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav.nav {
+    position: relative;
+}
+
+.menu-btn {
+    display: none;
+    width: 24px;
+    height: 100%;
+    padding: 0px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.menu-btn:focus {
+    outline: 2px solid #007bff;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.menu-list li a:hover {
+    color: #007bff;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        right: 0;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 160px;
+        display: none; /* controlado pelo Alpine.js */
+        gap: 0;
+    }
+
+    .menu-list.show {
+        display: flex;
+    }
+
+    .menu-list li {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-list li:last-child {
+        border-bottom: none;
+    }
+}
