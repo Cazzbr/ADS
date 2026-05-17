@@ -1,0 +1,96 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/simulador-formigueiro#> .
+
+### Ontologia: Simulação de Forrageamento, Comunicação e Feromônios ###
+
+ex:OntologiaFormigueiro rdf:type owl:Ontology ;
+    rdfs:comment "Ontologia que modela um sistema multiagente com comunicação indireta (estigmergia via feromônios positivos e negativos)." .
+
+#################################################################
+#    Classes (Entidades)                                        #
+#################################################################
+
+ex:Ambiente rdf:type owl:Class .
+ex:No rdf:type owl:Class .
+ex:Entidade rdf:type owl:Class .
+ex:Formigueiro rdf:type owl:Class ; rdfs:subClassOf ex:Entidade .
+ex:Alimento rdf:type owl:Class ; rdfs:subClassOf ex:Entidade .
+ex:Agente rdf:type owl:Class ; rdfs:subClassOf ex:Entidade .
+ex:Formiga rdf:type owl:Class ; rdfs:subClassOf ex:Agente .
+ex:Tamandua rdf:type owl:Class ; rdfs:subClassOf ex:Agente .
+ex:Rota rdf:type owl:Class .
+ex:Orquestrador rdf:type owl:Class .
+ex:Feromonio rdf:type owl:Class ; rdfs:subClassOf ex:Entidade .
+
+#################################################################
+#    Object Properties (Relacionamentos)                        #
+#################################################################
+
+ex:posicionadoEm rdf:type owl:ObjectProperty ; rdfs:domain ex:Entidade ; rdfs:range ex:No .
+ex:percorre rdf:type owl:ObjectProperty ; rdfs:domain ex:Formiga ; rdfs:range ex:Rota .
+ex:compostaPor rdf:type owl:ObjectProperty ; rdfs:domain ex:Rota ; rdfs:range ex:No .
+ex:elimina rdf:type owl:ObjectProperty ; rdfs:domain ex:Tamandua ; rdfs:range ex:Formiga .
+ex:monitora rdf:type owl:ObjectProperty ; rdfs:domain ex:Orquestrador ; rdfs:range [ rdf:type owl:Class ; owl:unionOf ( ex:Alimento ex:Tamandua ex:Formigueiro ) ] .
+
+# Relacionamentos de Feromônio
+ex:deposita rdf:type owl:ObjectProperty ; rdfs:domain ex:Formiga ; rdfs:range ex:Feromonio .
+ex:impregnadoEm rdf:type owl:ObjectProperty ; rdfs:domain ex:Feromonio ; rdfs:range ex:No .
+ex:apontaPara rdf:type owl:ObjectProperty ; rdfs:domain ex:Feromonio ; rdfs:range ex:No ; rdfs:comment "Indica o próximo nó na trilha do feromônio positivo." .
+
+#################################################################
+#    Data Properties (Atributos e Regras de Negócio)            #
+#################################################################
+
+ex:limitePassos rdf:type owl:DatatypeProperty ; rdfs:domain ex:Formiga ; rdfs:range xsd:integer .
+ex:capacidadeMaxima rdf:type owl:DatatypeProperty ; rdfs:domain ex:Alimento ; rdfs:range xsd:integer .
+ex:contadorSucesso rdf:type owl:DatatypeProperty ; rdfs:domain ex:Alimento ; rdfs:range xsd:integer .
+ex:intervaloMovimentoSegundos rdf:type owl:DatatypeProperty ; rdfs:domain ex:Tamandua ; rdfs:range xsd:integer .
+ex:populacaoTotal rdf:type owl:DatatypeProperty ; rdfs:domain ex:Formigueiro ; rdfs:range xsd:integer .
+ex:contadorPredadas rdf:type owl:DatatypeProperty ; rdfs:domain ex:Tamandua ; rdfs:range xsd:integer .
+
+ex:tipoFeromonio rdf:type owl:DatatypeProperty ; rdfs:domain ex:Feromonio ; rdfs:range xsd:string ; rdfs:comment "Pode ser 'nogood' (negativo) ou 'positivo'." .
+ex:coordX rdf:type owl:DatatypeProperty ; rdfs:domain ex:No ; rdfs:range xsd:integer .
+ex:coordY rdf:type owl:DatatypeProperty ; rdfs:domain ex:No ; rdfs:range xsd:integer .
+ex:rotaValida rdf:type owl:DatatypeProperty ; rdfs:domain ex:Rota ; rdfs:range xsd:boolean ; rdfs:comment "Indica se a rota levou ao alimento (true) ou foi falha (false)." .
+
+# NOVA REGRA: Exceção de Limite
+ex:ignoraLimiteEnergia rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Formiga ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Regra: Se Verdadeiro, a formiga ignora o ex:limitePassos enquanto estiver seguindo um ex:Feromonio do tipo 'positivo'." .
+
+#################################################################
+#    Instâncias de Exemplo (Individuals)                        #
+#################################################################
+
+ex:NoOrigem rdf:type ex:No ; ex:coordX 0 ; ex:coordY 0 .
+ex:BaseFormigueiro rdf:type ex:Formigueiro ; ex:posicionadoEm ex:NoOrigem ; ex:populacaoTotal 20 . 
+ex:AlimentoAlvo rdf:type ex:Alimento ; ex:capacidadeMaxima 4 ; ex:contadorSucesso 0 .
+ex:Predador01 rdf:type ex:Tamandua ; ex:intervaloMovimentoSegundos 5 ; ex:contadorPredadas 0 .
+
+# Instâncias de Formigas com a nova regra ativada
+
+ex:Formiga01 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga02 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga03 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga04 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga05 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga06 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga07 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga08 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga09 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga10 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga11 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga12 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga13 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga14 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga15 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga16 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga17 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga18 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga19 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .
+ex:Formiga20 rdf:type ex:Formiga ; ex:limitePassos 20 ; ex:ignoraLimiteEnergia true ; ex:posicionadoEm ex:NoOrigem .

@@ -1,0 +1,5362 @@
+@prefix ex: <http://example.org/simulador-formigueiro#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:AlimentoAlvo a ex:Alimento ;
+    ex:capacidadeMaxima 4 ;
+    ex:contadorSucesso 4 .
+
+ex:Ambiente a owl:Class .
+
+ex:BaseFormigueiro a ex:Formigueiro ;
+    ex:populacaoTotal 5 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga01 a ex:Formiga ;
+    ex:ignoraLimiteEnergia false ;
+    ex:limitePassos 20 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga02 a ex:Formiga ;
+    ex:ignoraLimiteEnergia false ;
+    ex:limitePassos 20 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga03 a ex:Formiga ;
+    ex:ignoraLimiteEnergia false ;
+    ex:limitePassos 20 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga04 a ex:Formiga ;
+    ex:ignoraLimiteEnergia false ;
+    ex:limitePassos 20 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga05 a ex:Formiga ;
+    ex:ignoraLimiteEnergia false ;
+    ex:limitePassos 20 ;
+    ex:posicionadoEm ex:NoOrigem .
+
+ex:Formiga_1 ex:percorre ex:Rota_Formiga_1_1,
+        ex:Rota_Formiga_1_101,
+        ex:Rota_Formiga_1_106,
+        ex:Rota_Formiga_1_11,
+        ex:Rota_Formiga_1_111,
+        ex:Rota_Formiga_1_116,
+        ex:Rota_Formiga_1_121,
+        ex:Rota_Formiga_1_126,
+        ex:Rota_Formiga_1_131,
+        ex:Rota_Formiga_1_136,
+        ex:Rota_Formiga_1_141,
+        ex:Rota_Formiga_1_146,
+        ex:Rota_Formiga_1_151,
+        ex:Rota_Formiga_1_156,
+        ex:Rota_Formiga_1_16,
+        ex:Rota_Formiga_1_161,
+        ex:Rota_Formiga_1_166,
+        ex:Rota_Formiga_1_171,
+        ex:Rota_Formiga_1_176,
+        ex:Rota_Formiga_1_181,
+        ex:Rota_Formiga_1_186,
+        ex:Rota_Formiga_1_191,
+        ex:Rota_Formiga_1_196,
+        ex:Rota_Formiga_1_201,
+        ex:Rota_Formiga_1_206,
+        ex:Rota_Formiga_1_21,
+        ex:Rota_Formiga_1_211,
+        ex:Rota_Formiga_1_216,
+        ex:Rota_Formiga_1_221,
+        ex:Rota_Formiga_1_226,
+        ex:Rota_Formiga_1_231,
+        ex:Rota_Formiga_1_236,
+        ex:Rota_Formiga_1_241,
+        ex:Rota_Formiga_1_246,
+        ex:Rota_Formiga_1_251,
+        ex:Rota_Formiga_1_256,
+        ex:Rota_Formiga_1_26,
+        ex:Rota_Formiga_1_261,
+        ex:Rota_Formiga_1_266,
+        ex:Rota_Formiga_1_271,
+        ex:Rota_Formiga_1_276,
+        ex:Rota_Formiga_1_281,
+        ex:Rota_Formiga_1_286,
+        ex:Rota_Formiga_1_291,
+        ex:Rota_Formiga_1_296,
+        ex:Rota_Formiga_1_301,
+        ex:Rota_Formiga_1_306,
+        ex:Rota_Formiga_1_31,
+        ex:Rota_Formiga_1_311,
+        ex:Rota_Formiga_1_36,
+        ex:Rota_Formiga_1_41,
+        ex:Rota_Formiga_1_46,
+        ex:Rota_Formiga_1_51,
+        ex:Rota_Formiga_1_56,
+        ex:Rota_Formiga_1_6,
+        ex:Rota_Formiga_1_61,
+        ex:Rota_Formiga_1_66,
+        ex:Rota_Formiga_1_71,
+        ex:Rota_Formiga_1_76,
+        ex:Rota_Formiga_1_81,
+        ex:Rota_Formiga_1_86,
+        ex:Rota_Formiga_1_91,
+        ex:Rota_Formiga_1_96 .
+
+ex:Formiga_2 ex:percorre ex:Rota_Formiga_2_102,
+        ex:Rota_Formiga_2_107,
+        ex:Rota_Formiga_2_112,
+        ex:Rota_Formiga_2_117,
+        ex:Rota_Formiga_2_12,
+        ex:Rota_Formiga_2_122,
+        ex:Rota_Formiga_2_127,
+        ex:Rota_Formiga_2_132,
+        ex:Rota_Formiga_2_137,
+        ex:Rota_Formiga_2_142,
+        ex:Rota_Formiga_2_147,
+        ex:Rota_Formiga_2_152,
+        ex:Rota_Formiga_2_157,
+        ex:Rota_Formiga_2_162,
+        ex:Rota_Formiga_2_167,
+        ex:Rota_Formiga_2_17,
+        ex:Rota_Formiga_2_172,
+        ex:Rota_Formiga_2_177,
+        ex:Rota_Formiga_2_182,
+        ex:Rota_Formiga_2_187,
+        ex:Rota_Formiga_2_192,
+        ex:Rota_Formiga_2_197,
+        ex:Rota_Formiga_2_2,
+        ex:Rota_Formiga_2_202,
+        ex:Rota_Formiga_2_207,
+        ex:Rota_Formiga_2_212,
+        ex:Rota_Formiga_2_217,
+        ex:Rota_Formiga_2_22,
+        ex:Rota_Formiga_2_222,
+        ex:Rota_Formiga_2_227,
+        ex:Rota_Formiga_2_232,
+        ex:Rota_Formiga_2_237,
+        ex:Rota_Formiga_2_242,
+        ex:Rota_Formiga_2_247,
+        ex:Rota_Formiga_2_252,
+        ex:Rota_Formiga_2_257,
+        ex:Rota_Formiga_2_262,
+        ex:Rota_Formiga_2_267,
+        ex:Rota_Formiga_2_27,
+        ex:Rota_Formiga_2_272,
+        ex:Rota_Formiga_2_277,
+        ex:Rota_Formiga_2_282,
+        ex:Rota_Formiga_2_287,
+        ex:Rota_Formiga_2_292,
+        ex:Rota_Formiga_2_297,
+        ex:Rota_Formiga_2_302,
+        ex:Rota_Formiga_2_307,
+        ex:Rota_Formiga_2_312,
+        ex:Rota_Formiga_2_32,
+        ex:Rota_Formiga_2_37,
+        ex:Rota_Formiga_2_42,
+        ex:Rota_Formiga_2_47,
+        ex:Rota_Formiga_2_52,
+        ex:Rota_Formiga_2_57,
+        ex:Rota_Formiga_2_62,
+        ex:Rota_Formiga_2_67,
+        ex:Rota_Formiga_2_7,
+        ex:Rota_Formiga_2_72,
+        ex:Rota_Formiga_2_77,
+        ex:Rota_Formiga_2_82,
+        ex:Rota_Formiga_2_87,
+        ex:Rota_Formiga_2_92,
+        ex:Rota_Formiga_2_97 .
+
+ex:Formiga_3 ex:percorre ex:Rota_Formiga_3_103,
+        ex:Rota_Formiga_3_108,
+        ex:Rota_Formiga_3_113,
+        ex:Rota_Formiga_3_118,
+        ex:Rota_Formiga_3_123,
+        ex:Rota_Formiga_3_128,
+        ex:Rota_Formiga_3_13,
+        ex:Rota_Formiga_3_133,
+        ex:Rota_Formiga_3_138,
+        ex:Rota_Formiga_3_143,
+        ex:Rota_Formiga_3_148,
+        ex:Rota_Formiga_3_153,
+        ex:Rota_Formiga_3_158,
+        ex:Rota_Formiga_3_163,
+        ex:Rota_Formiga_3_168,
+        ex:Rota_Formiga_3_173,
+        ex:Rota_Formiga_3_178,
+        ex:Rota_Formiga_3_18,
+        ex:Rota_Formiga_3_183,
+        ex:Rota_Formiga_3_188,
+        ex:Rota_Formiga_3_193,
+        ex:Rota_Formiga_3_198,
+        ex:Rota_Formiga_3_203,
+        ex:Rota_Formiga_3_208,
+        ex:Rota_Formiga_3_213,
+        ex:Rota_Formiga_3_218,
+        ex:Rota_Formiga_3_223,
+        ex:Rota_Formiga_3_228,
+        ex:Rota_Formiga_3_23,
+        ex:Rota_Formiga_3_233,
+        ex:Rota_Formiga_3_238,
+        ex:Rota_Formiga_3_243,
+        ex:Rota_Formiga_3_248,
+        ex:Rota_Formiga_3_253,
+        ex:Rota_Formiga_3_258,
+        ex:Rota_Formiga_3_263,
+        ex:Rota_Formiga_3_268,
+        ex:Rota_Formiga_3_273,
+        ex:Rota_Formiga_3_278,
+        ex:Rota_Formiga_3_28,
+        ex:Rota_Formiga_3_283,
+        ex:Rota_Formiga_3_288,
+        ex:Rota_Formiga_3_293,
+        ex:Rota_Formiga_3_298,
+        ex:Rota_Formiga_3_3,
+        ex:Rota_Formiga_3_303,
+        ex:Rota_Formiga_3_308,
+        ex:Rota_Formiga_3_313,
+        ex:Rota_Formiga_3_33,
+        ex:Rota_Formiga_3_38,
+        ex:Rota_Formiga_3_43,
+        ex:Rota_Formiga_3_48,
+        ex:Rota_Formiga_3_53,
+        ex:Rota_Formiga_3_58,
+        ex:Rota_Formiga_3_63,
+        ex:Rota_Formiga_3_68,
+        ex:Rota_Formiga_3_73,
+        ex:Rota_Formiga_3_78,
+        ex:Rota_Formiga_3_8,
+        ex:Rota_Formiga_3_83,
+        ex:Rota_Formiga_3_88,
+        ex:Rota_Formiga_3_93,
+        ex:Rota_Formiga_3_98 .
+
+ex:Formiga_4 ex:percorre ex:Rota_Formiga_4_104,
+        ex:Rota_Formiga_4_109,
+        ex:Rota_Formiga_4_114,
+        ex:Rota_Formiga_4_119,
+        ex:Rota_Formiga_4_124,
+        ex:Rota_Formiga_4_129,
+        ex:Rota_Formiga_4_134,
+        ex:Rota_Formiga_4_139,
+        ex:Rota_Formiga_4_14,
+        ex:Rota_Formiga_4_144,
+        ex:Rota_Formiga_4_149,
+        ex:Rota_Formiga_4_154,
+        ex:Rota_Formiga_4_159,
+        ex:Rota_Formiga_4_164,
+        ex:Rota_Formiga_4_169,
+        ex:Rota_Formiga_4_174,
+        ex:Rota_Formiga_4_179,
+        ex:Rota_Formiga_4_184,
+        ex:Rota_Formiga_4_189,
+        ex:Rota_Formiga_4_19,
+        ex:Rota_Formiga_4_194,
+        ex:Rota_Formiga_4_199,
+        ex:Rota_Formiga_4_204,
+        ex:Rota_Formiga_4_209,
+        ex:Rota_Formiga_4_214,
+        ex:Rota_Formiga_4_219,
+        ex:Rota_Formiga_4_224,
+        ex:Rota_Formiga_4_229,
+        ex:Rota_Formiga_4_234,
+        ex:Rota_Formiga_4_239,
+        ex:Rota_Formiga_4_24,
+        ex:Rota_Formiga_4_244,
+        ex:Rota_Formiga_4_249,
+        ex:Rota_Formiga_4_254,
+        ex:Rota_Formiga_4_259,
+        ex:Rota_Formiga_4_264,
+        ex:Rota_Formiga_4_269,
+        ex:Rota_Formiga_4_274,
+        ex:Rota_Formiga_4_279,
+        ex:Rota_Formiga_4_284,
+        ex:Rota_Formiga_4_289,
+        ex:Rota_Formiga_4_29,
+        ex:Rota_Formiga_4_294,
+        ex:Rota_Formiga_4_299,
+        ex:Rota_Formiga_4_304,
+        ex:Rota_Formiga_4_309,
+        ex:Rota_Formiga_4_34,
+        ex:Rota_Formiga_4_39,
+        ex:Rota_Formiga_4_4,
+        ex:Rota_Formiga_4_44,
+        ex:Rota_Formiga_4_49,
+        ex:Rota_Formiga_4_54,
+        ex:Rota_Formiga_4_59,
+        ex:Rota_Formiga_4_64,
+        ex:Rota_Formiga_4_69,
+        ex:Rota_Formiga_4_74,
+        ex:Rota_Formiga_4_79,
+        ex:Rota_Formiga_4_84,
+        ex:Rota_Formiga_4_89,
+        ex:Rota_Formiga_4_9,
+        ex:Rota_Formiga_4_94,
+        ex:Rota_Formiga_4_99 .
+
+ex:Formiga_5 ex:percorre ex:Rota_Formiga_5_10,
+        ex:Rota_Formiga_5_100,
+        ex:Rota_Formiga_5_105,
+        ex:Rota_Formiga_5_110,
+        ex:Rota_Formiga_5_115,
+        ex:Rota_Formiga_5_120,
+        ex:Rota_Formiga_5_125,
+        ex:Rota_Formiga_5_130,
+        ex:Rota_Formiga_5_135,
+        ex:Rota_Formiga_5_140,
+        ex:Rota_Formiga_5_145,
+        ex:Rota_Formiga_5_15,
+        ex:Rota_Formiga_5_150,
+        ex:Rota_Formiga_5_155,
+        ex:Rota_Formiga_5_160,
+        ex:Rota_Formiga_5_165,
+        ex:Rota_Formiga_5_170,
+        ex:Rota_Formiga_5_175,
+        ex:Rota_Formiga_5_180,
+        ex:Rota_Formiga_5_185,
+        ex:Rota_Formiga_5_190,
+        ex:Rota_Formiga_5_195,
+        ex:Rota_Formiga_5_20,
+        ex:Rota_Formiga_5_200,
+        ex:Rota_Formiga_5_205,
+        ex:Rota_Formiga_5_210,
+        ex:Rota_Formiga_5_215,
+        ex:Rota_Formiga_5_220,
+        ex:Rota_Formiga_5_225,
+        ex:Rota_Formiga_5_230,
+        ex:Rota_Formiga_5_235,
+        ex:Rota_Formiga_5_240,
+        ex:Rota_Formiga_5_245,
+        ex:Rota_Formiga_5_25,
+        ex:Rota_Formiga_5_250,
+        ex:Rota_Formiga_5_255,
+        ex:Rota_Formiga_5_260,
+        ex:Rota_Formiga_5_265,
+        ex:Rota_Formiga_5_270,
+        ex:Rota_Formiga_5_275,
+        ex:Rota_Formiga_5_280,
+        ex:Rota_Formiga_5_285,
+        ex:Rota_Formiga_5_290,
+        ex:Rota_Formiga_5_295,
+        ex:Rota_Formiga_5_30,
+        ex:Rota_Formiga_5_300,
+        ex:Rota_Formiga_5_305,
+        ex:Rota_Formiga_5_310,
+        ex:Rota_Formiga_5_35,
+        ex:Rota_Formiga_5_40,
+        ex:Rota_Formiga_5_45,
+        ex:Rota_Formiga_5_5,
+        ex:Rota_Formiga_5_50,
+        ex:Rota_Formiga_5_55,
+        ex:Rota_Formiga_5_60,
+        ex:Rota_Formiga_5_65,
+        ex:Rota_Formiga_5_70,
+        ex:Rota_Formiga_5_75,
+        ex:Rota_Formiga_5_80,
+        ex:Rota_Formiga_5_85,
+        ex:Rota_Formiga_5_90,
+        ex:Rota_Formiga_5_95 .
+
+ex:OntologiaFormigueiro a owl:Ontology ;
+    rdfs:comment "Ontologia que modela um sistema multiagente com comunicação indireta (estigmergia via feromônios positivos e negativos)." .
+
+ex:Predador01 a ex:Tamandua ;
+    ex:contadorPredadas 0 ;
+    ex:intervaloMovimentoSegundos 5 .
+
+ex:apontaPara a owl:ObjectProperty ;
+    rdfs:comment "Indica o próximo nó na trilha do feromônio positivo." ;
+    rdfs:domain ex:Feromonio ;
+    rdfs:range ex:No .
+
+ex:capacidadeMaxima a owl:DatatypeProperty ;
+    rdfs:domain ex:Alimento ;
+    rdfs:range xsd:integer .
+
+ex:compostaPor a owl:ObjectProperty ;
+    rdfs:domain ex:Rota ;
+    rdfs:range ex:No .
+
+ex:contadorPredadas a owl:DatatypeProperty ;
+    rdfs:domain ex:Tamandua ;
+    rdfs:range xsd:integer .
+
+ex:contadorSucesso a owl:DatatypeProperty ;
+    rdfs:domain ex:Alimento ;
+    rdfs:range xsd:integer .
+
+ex:coordX a owl:DatatypeProperty ;
+    rdfs:domain ex:No ;
+    rdfs:range xsd:integer .
+
+ex:coordY a owl:DatatypeProperty ;
+    rdfs:domain ex:No ;
+    rdfs:range xsd:integer .
+
+ex:deposita a owl:ObjectProperty ;
+    rdfs:domain ex:Formiga ;
+    rdfs:range ex:Feromonio .
+
+ex:elimina a owl:ObjectProperty ;
+    rdfs:domain ex:Tamandua ;
+    rdfs:range ex:Formiga .
+
+ex:ignoraLimiteEnergia a owl:DatatypeProperty ;
+    rdfs:comment "Regra: Se Verdadeiro, a formiga ignora o ex:limitePassos enquanto estiver seguindo um ex:Feromonio do tipo 'positivo'." ;
+    rdfs:domain ex:Formiga ;
+    rdfs:range xsd:boolean .
+
+ex:impregnadoEm a owl:ObjectProperty ;
+    rdfs:domain ex:Feromonio ;
+    rdfs:range ex:No .
+
+ex:intervaloMovimentoSegundos a owl:DatatypeProperty ;
+    rdfs:domain ex:Tamandua ;
+    rdfs:range xsd:integer .
+
+ex:limitePassos a owl:DatatypeProperty ;
+    rdfs:domain ex:Formiga ;
+    rdfs:range xsd:integer .
+
+ex:monitora a owl:ObjectProperty ;
+    rdfs:domain ex:Orquestrador ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( ex:Alimento ex:Tamandua ex:Formigueiro ) ] .
+
+ex:percorre a owl:ObjectProperty ;
+    rdfs:domain ex:Formiga ;
+    rdfs:range ex:Rota .
+
+ex:populacaoTotal a owl:DatatypeProperty ;
+    rdfs:domain ex:Formigueiro ;
+    rdfs:range xsd:integer .
+
+ex:posicionadoEm a owl:ObjectProperty ;
+    rdfs:domain ex:Entidade ;
+    rdfs:range ex:No .
+
+ex:rotaValida a owl:DatatypeProperty ;
+    rdfs:comment "Indica se a rota levou ao alimento (true) ou foi falha (false)." ;
+    rdfs:domain ex:Rota ;
+    rdfs:range xsd:boolean .
+
+ex:tipoFeromonio a owl:DatatypeProperty ;
+    rdfs:comment "Pode ser 'nogood' (negativo) ou 'positivo'." ;
+    rdfs:domain ex:Feromonio ;
+    rdfs:range xsd:string .
+
+ex:No_2_9 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 9 .
+
+ex:No_3_8 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 8 .
+
+ex:No_3_9 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 9 .
+
+ex:No_4_8 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 8 .
+
+ex:No_4_9 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 9 .
+
+ex:No_5_8 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 8 .
+
+ex:No_6_8 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 8 .
+
+ex:No_7_3 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 3 .
+
+ex:No_7_5 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 5 .
+
+ex:No_7_6 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 6 .
+
+ex:No_8_4 a ex:No ;
+    ex:coordX 8 ;
+    ex:coordY 4 .
+
+ex:No_8_5 a ex:No ;
+    ex:coordX 8 ;
+    ex:coordY 5 .
+
+ex:No_9_0 a ex:No ;
+    ex:coordX 9 ;
+    ex:coordY 0 .
+
+ex:No_9_1 a ex:No ;
+    ex:coordX 9 ;
+    ex:coordY 1 .
+
+ex:No_9_5 a ex:No ;
+    ex:coordX 9 ;
+    ex:coordY 5 .
+
+ex:Orquestrador a owl:Class .
+
+ex:Rota_Formiga_1_1 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_101 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_106 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_11 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_111 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_116 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_121 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_126 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_131 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_0_8,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_7,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_6,
+        ex:No_2_7,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_3_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_136 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_141 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_146 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_1_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_151 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_156 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_16 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_161 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_3,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_166 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_6_1,
+        ex:No_6_2,
+        ex:No_7_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_171 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_176 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_181 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_186 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_4,
+        ex:No_2_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_191 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_196 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_201 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_206 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_3,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_21 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_4,
+        ex:No_3_4,
+        ex:No_4_4,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_6_5,
+        ex:No_6_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_211 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_216 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_221 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_226 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_231 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_236 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_6_1,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_8_0,
+        ex:No_9_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_241 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_246 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_2_4,
+        ex:No_2_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_251 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_256 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_5,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_26 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_1,
+        ex:No_7_1,
+        ex:No_8_0,
+        ex:No_8_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_261 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_3,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_266 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_271 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_276 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_281 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_286 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_291 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_296 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_301 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_4_2,
+        ex:No_4_6,
+        ex:No_5_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_306 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_7_2,
+        ex:No_8_2,
+        ex:No_9_2 ;
+    ex:rotaValida true .
+
+ex:Rota_Formiga_1_31 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_311 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_7_2,
+        ex:No_8_2,
+        ex:No_9_2 ;
+    ex:rotaValida true .
+
+ex:Rota_Formiga_1_36 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_41 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_46 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_51 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_56 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_6 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_61 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_66 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_71 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_76 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_5,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_4_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_81 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_5,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_5,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_6_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_86 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_4_5,
+        ex:No_4_6,
+        ex:No_4_7,
+        ex:No_5_7 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_91 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_1_1,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_1_7,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_1_96 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_1,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_102 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_107 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_2,
+        ex:No_6_3,
+        ex:No_6_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_112 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_3_1,
+        ex:No_3_5,
+        ex:No_3_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_117 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_12 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_5,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_4,
+        ex:No_4_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_122 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_127 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_132 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_137 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_142 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_1,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_147 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_152 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_157 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_162 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_167 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_17 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_172 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_177 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_182 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_187 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_192 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_7,
+        ex:No_0_8,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_7,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_6,
+        ex:No_2_7,
+        ex:No_3_1,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_3_7 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_197 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_2 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_202 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_2,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_207 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_212 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_4,
+        ex:No_2_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_217 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_22 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_222 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_227 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_232 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_237 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_242 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_247 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_252 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_257 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_5,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_262 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_267 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_27 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_272 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_277 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_282 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_287 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_5,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_5,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_292 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_5_6,
+        ex:No_5_7,
+        ex:No_5_8,
+        ex:No_6_2,
+        ex:No_6_8 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_297 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_0_8,
+        ex:No_0_9,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_8,
+        ex:No_1_9 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_302 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_307 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_312 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_7_2,
+        ex:No_8_2,
+        ex:No_9_2 ;
+    ex:rotaValida true .
+
+ex:Rota_Formiga_2_32 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_37 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_42 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_47 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_52 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_57 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_62 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_67 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_7 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_72 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_77 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_82 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_87 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_92 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_2,
+        ex:No_5_2,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_2_97 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_103 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_108 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_113 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_118 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_123 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_128 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_4_5,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_13 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_133 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_138 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_143 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_148 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_153 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_158 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_163 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_168 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_173 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_178 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_0_8,
+        ex:No_1_6,
+        ex:No_1_8 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_18 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_183 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_5,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_2_7,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_3_7,
+        ex:No_4_5,
+        ex:No_4_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_188 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_193 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_198 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_4,
+        ex:No_6_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_203 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_208 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_213 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_218 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_223 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1,
+        ex:No_5_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_228 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_23 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_3_4,
+        ex:No_4_4,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_233 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_4_0,
+        ex:No_4_2,
+        ex:No_4_6,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_238 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_4,
+        ex:No_5_3,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_243 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_248 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_253 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_258 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_263 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_268 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_273 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_278 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_28 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_283 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_288 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_293 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_298 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_3 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_0_8,
+        ex:No_0_9,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_1_7,
+        ex:No_1_8,
+        ex:No_1_9,
+        ex:No_2_6,
+        ex:No_2_7 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_303 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_308 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_7_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_313 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_7_2,
+        ex:No_8_2,
+        ex:No_9_2 ;
+    ex:rotaValida true .
+
+ex:Rota_Formiga_3_33 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_38 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_4_2,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_43 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_48 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_53 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_58 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_2_7,
+        ex:No_2_8,
+        ex:No_2_9,
+        ex:No_3_9,
+        ex:No_4_5,
+        ex:No_4_6,
+        ex:No_4_7,
+        ex:No_4_8,
+        ex:No_4_9 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_63 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_4,
+        ex:No_7_4,
+        ex:No_7_5,
+        ex:No_8_4,
+        ex:No_8_5,
+        ex:No_9_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_68 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_8,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_3_6,
+        ex:No_3_7,
+        ex:No_3_8,
+        ex:No_4_4,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_73 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_6_2,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_7_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_78 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_8 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_83 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_88 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_93 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_3_98 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_104 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_109 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_114 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_119 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_124 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_129 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_134 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_139 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_14 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_144 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_149 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1,
+        ex:No_5_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_154 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_159 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_164 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_2_5,
+        ex:No_2_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_169 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_4_5,
+        ex:No_4_6,
+        ex:No_5_3,
+        ex:No_5_6,
+        ex:No_6_4,
+        ex:No_6_5,
+        ex:No_6_6,
+        ex:No_7_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_174 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_179 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_6_2,
+        ex:No_7_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_184 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_189 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_6_3,
+        ex:No_6_4,
+        ex:No_7_3,
+        ex:No_7_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_19 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_194 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_199 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_4,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_204 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_209 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_5_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_214 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_219 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_224 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_229 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_234 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_239 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_24 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_244 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_249 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_254 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_259 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_264 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_7_0,
+        ex:No_7_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_269 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_274 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_279 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_7_0,
+        ex:No_7_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_284 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_289 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_29 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_294 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_299 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_4_1,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_1,
+        ex:No_6_2,
+        ex:No_6_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_304 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_309 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_7_0,
+        ex:No_7_1,
+        ex:No_8_1,
+        ex:No_9_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_34 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_39 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_5_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_4 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_44 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_49 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_54 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_59 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_64 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_69 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_1,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_74 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_79 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_84 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_89 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_0,
+        ex:No_6_1,
+        ex:No_6_2,
+        ex:No_7_0,
+        ex:No_7_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_9 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_3_1,
+        ex:No_3_3,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_94 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_4_99 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_10 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_100 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_4,
+        ex:No_5_4,
+        ex:No_5_5,
+        ex:No_6_4,
+        ex:No_6_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_105 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_110 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_115 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_120 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_125 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_6,
+        ex:No_2_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_130 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_1_6,
+        ex:No_1_7 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_135 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_140 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_4,
+        ex:No_4_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_145 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_15 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_150 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_155 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_160 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_165 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_4_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_170 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_175 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_0_7,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_7,
+        ex:No_1_8,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_8 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_180 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_185 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_190 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_195 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_6_0,
+        ex:No_6_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_20 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_200 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_205 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_210 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_215 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_220 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_1_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_225 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_1_7,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_2_7 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_230 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_235 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_240 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_245 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_5,
+        ex:No_3_5,
+        ex:No_4_5,
+        ex:No_4_6 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_25 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_2,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_3_4,
+        ex:No_4_4,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_2,
+        ex:No_6_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_250 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_255 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_3,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_260 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_265 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_4,
+        ex:No_1_1,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_270 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_2,
+        ex:No_5_0,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_6_0 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_275 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_280 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_3_3,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_1,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_285 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_290 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_4,
+        ex:No_1_5,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_4_0,
+        ex:No_4_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_295 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_30 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_300 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_2,
+        ex:No_3_2,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_305 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_1_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_310 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_2_5,
+        ex:No_2_6,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_35 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_3_0,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_5_0,
+        ex:No_5_1 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_40 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_0_5,
+        ex:No_0_6,
+        ex:No_1_5,
+        ex:No_1_6,
+        ex:No_1_7,
+        ex:No_1_8,
+        ex:No_1_9 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_45 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2,
+        ex:No_3_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_5 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_1_0,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_2,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_3_5,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_4_5 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_50 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_55 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_60 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_1_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_65 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_4,
+        ex:No_3_4,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_2,
+        ex:No_5_3,
+        ex:No_5_4,
+        ex:No_6_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_70 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_75 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_3,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_2_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_80 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_85 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_4,
+        ex:No_1_0,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_0,
+        ex:No_2_3,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_3,
+        ex:No_4_0,
+        ex:No_4_1,
+        ex:No_4_2,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_2,
+        ex:No_5_3 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_90 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_0_2,
+        ex:No_0_3,
+        ex:No_0_4,
+        ex:No_1_3,
+        ex:No_1_4,
+        ex:No_2_2,
+        ex:No_2_3,
+        ex:No_2_4,
+        ex:No_3_3,
+        ex:No_3_4,
+        ex:No_4_3,
+        ex:No_4_4,
+        ex:No_5_4 ;
+    ex:rotaValida false .
+
+ex:Rota_Formiga_5_95 a ex:Rota ;
+    ex:compostaPor ex:No_0_0,
+        ex:No_0_1,
+        ex:No_1_0,
+        ex:No_1_1,
+        ex:No_1_2,
+        ex:No_2_0,
+        ex:No_2_1,
+        ex:No_2_2,
+        ex:No_3_0,
+        ex:No_3_1,
+        ex:No_3_2 ;
+    ex:rotaValida false .
+
+ex:Agente a owl:Class ;
+    rdfs:subClassOf ex:Entidade .
+
+ex:No_0_9 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 9 .
+
+ex:No_4_7 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 7 .
+
+ex:No_5_7 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 7 .
+
+ex:No_6_6 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 6 .
+
+ex:No_7_4 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 4 .
+
+ex:No_8_0 a ex:No ;
+    ex:coordX 8 ;
+    ex:coordY 0 .
+
+ex:No_8_1 a ex:No ;
+    ex:coordX 8 ;
+    ex:coordY 1 .
+
+ex:Formigueiro a owl:Class ;
+    rdfs:subClassOf ex:Entidade .
+
+ex:No_1_9 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 9 .
+
+ex:No_2_8 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 8 .
+
+ex:No_3_7 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 7 .
+
+ex:No_6_5 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 5 .
+
+ex:Alimento a owl:Class ;
+    rdfs:subClassOf ex:Entidade .
+
+ex:Feromonio a owl:Class ;
+    rdfs:subClassOf ex:Entidade .
+
+ex:No_5_6 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 6 .
+
+ex:No_6_3 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 3 .
+
+ex:No_8_2 a ex:No ;
+    ex:coordX 8 ;
+    ex:coordY 2 .
+
+ex:No_9_2 a ex:No ;
+    ex:coordX 9 ;
+    ex:coordY 2 .
+
+ex:Entidade a owl:Class .
+
+ex:No_0_8 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 8 .
+
+ex:No_1_8 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 8 .
+
+ex:Tamandua a owl:Class ;
+    rdfs:subClassOf ex:Agente .
+
+ex:NoOrigem a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 0 .
+
+ex:No_2_7 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 7 .
+
+ex:No_7_2 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 2 .
+
+ex:No_5_5 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 5 .
+
+ex:No_0_7 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 7 .
+
+ex:No_1_7 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 7 .
+
+ex:No_3_6 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 6 .
+
+ex:No_4_6 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 6 .
+
+ex:No_6_4 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 4 .
+
+ex:Formiga a owl:Class ;
+    rdfs:subClassOf ex:Agente .
+
+ex:No_4_5 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 5 .
+
+ex:No_7_0 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 0 .
+
+ex:No_2_6 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 6 .
+
+ex:No_7_1 a ex:No ;
+    ex:coordX 7 ;
+    ex:coordY 1 .
+
+ex:No_1_6 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 6 .
+
+ex:No_0_6 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 6 .
+
+ex:No_6_1 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 1 .
+
+ex:No_6_2 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 2 .
+
+ex:No_5_4 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 4 .
+
+ex:No_3_5 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 5 .
+
+ex:No_5_3 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 3 .
+
+ex:No_6_0 a ex:No ;
+    ex:coordX 6 ;
+    ex:coordY 0 .
+
+ex:No_4_4 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 4 .
+
+ex:No_2_5 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 5 .
+
+ex:No_0_5 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 5 .
+
+ex:No_5_2 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 2 .
+
+ex:No_1_5 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 5 .
+
+ex:No_3_4 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 4 .
+
+ex:No_4_3 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 3 .
+
+ex:No_5_0 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 0 .
+
+ex:No_5_1 a ex:No ;
+    ex:coordX 5 ;
+    ex:coordY 1 .
+
+ex:No_4_2 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 2 .
+
+ex:No_2_4 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 4 .
+
+ex:No_3_3 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 3 .
+
+ex:No_0_4 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 4 .
+
+ex:No_1_4 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 4 .
+
+ex:No_4_0 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 0 .
+
+ex:No_4_1 a ex:No ;
+    ex:coordX 4 ;
+    ex:coordY 1 .
+
+ex:No_3_2 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 2 .
+
+ex:No a owl:Class .
+
+ex:No_2_3 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 3 .
+
+ex:No_0_3 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 3 .
+
+ex:No_3_0 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 0 .
+
+ex:No_1_3 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 3 .
+
+ex:No_3_1 a ex:No ;
+    ex:coordX 3 ;
+    ex:coordY 1 .
+
+ex:No_2_2 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 2 .
+
+ex:No_0_2 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 2 .
+
+ex:No_2_0 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 0 .
+
+ex:No_1_2 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 2 .
+
+ex:No_2_1 a ex:No ;
+    ex:coordX 2 ;
+    ex:coordY 1 .
+
+ex:No_1_1 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 1 .
+
+ex:No_0_1 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 1 .
+
+ex:No_1_0 a ex:No ;
+    ex:coordX 1 ;
+    ex:coordY 0 .
+
+ex:No_0_0 a ex:No ;
+    ex:coordX 0 ;
+    ex:coordY 0 .
+
+ex:Rota a owl:Class .
+
