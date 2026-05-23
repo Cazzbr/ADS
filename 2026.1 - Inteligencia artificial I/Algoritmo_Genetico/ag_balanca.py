@@ -84,3 +84,7 @@ def genetic_algorithm(peso_alvo, pesos=PESOS, tamanho_pop=100,
     print(f"   Pesos: {pesos_selecionados(melhor_historico, pesos)}")
     print(f"   Soma:  {soma_individuo(melhor_historico, pesos)} kg  (alvo: {peso_alvo} kg)")
     return melhor_historico
+
+
+if __name__ == "__main__":
+    genetic_algorithm(peso_alvo=50)
